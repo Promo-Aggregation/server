@@ -5,7 +5,7 @@
   "main": "dist/bin/http.js",
   "scripts": {
     "test": "mocha",
-    "dev": "tsc & nodemon"
+    "dev": "tsc -w & nodemon"
   },
   "repository": {
     "type": "git",
