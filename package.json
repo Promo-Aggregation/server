@@ -1,0 +1,42 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/bin/http.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "tsc & nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Promo-Aggregation/server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Promo-Aggregation/server/issues"
+  },
+  "homepage": "https://github.com/Promo-Aggregation/server#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.2",
+    "@types/mongoose": "^5.5.31",
+    "@types/morgan": "^1.7.37",
+    "@types/node": "^12.12.7",
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "mocha": "^6.2.2",
+    "nodemon": "^1.19.4",
+    "ts-node": "^8.5.0",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.10",
+    "morgan": "^1.9.1"
+  }
+}
