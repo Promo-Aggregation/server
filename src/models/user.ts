@@ -1,10 +1,10 @@
 import { model, Schema, Document } from 'mongoose'
 import { encrypt } from '../helpers/bcryptjs'
 
-interface user extends Document {
+export interface IUser extends Document {
   email: string
   password: string
-  tags: string[]
+  tags?: string[]
 }
 
 const userSchema = new Schema({
@@ -13,9 +13,9 @@ const userSchema = new Schema({
   tags: { type: [String] },
 })
 
-userSchema.pre<user>('save', async function(next) {
+userSchema.pre<IUser>('save', async function(next) {
   this.password = await encrypt(this.password)
   next()
 })
 
-export default model('Users', userSchema)
+export default model<IUser>('Users', userSchema)
