@@ -6,7 +6,7 @@ steps:
   - name: "gcr.io/cloud-builders/npm"
     args: ["run", "test"]
     env:
-      - "MONGO_DB=${_MONGO_DB}"
+      - "MONGO_DB=${_MONGO_DB_TEST}"
   - name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy"]
     env:
