@@ -5,10 +5,13 @@ export interface IUser extends Document {
   subscription?: string[]
 }
 
-const userSchema = new Schema({
-  subscription: { type: [String] },
-  device_token: { type: String, unique: true },
-})
+const userSchema = new Schema(
+  {
+    subscription: { type: [String] },
+    device_token: { type: String, unique: true }
+  },
+  { timestamps: true }
+)
 
 // * Unique Mongoose Handling
 userSchema.post('save', function(error: any, doc: any, next: Function) {
