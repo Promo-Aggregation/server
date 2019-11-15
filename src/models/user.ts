@@ -10,6 +10,7 @@ const userSchema = new Schema({
   device_token: { type: String, unique: true },
 })
 
+// * Unique Mongoose Handling
 userSchema.post('save', function(error: any, doc: any, next: Function) {
   if (error) return next(error)
   next()
