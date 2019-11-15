@@ -16,12 +16,16 @@ export async function danaFood() {
 
     for (const card of cards) {
       console.log('wait for it')
-      const title = await card.$eval('h3', (h3: any) => h3.innerText)
-      const date = await card.$eval('div[class="date"]', (date: any) => date.innerText)
-      const detailUrl = await card.$eval('a[class="btn_more"]', (date: any) =>
-        date.getAttribute('href')
-      )
-      const imageUrl = await card.$eval('.img_con > img', (node: any) => node.getAttribute('src'))
+      const _title = card.$eval('h3', (h3: any) => h3.innerText)
+      const _date = card.$eval('div[class="date"]', (date: any) => date.innerText)
+      const _detailUrl = card.$eval('a[class="btn_more"]', (date: any) => date.getAttribute('href'))
+      const _imageUrl = card.$eval('.img_con > img', (node: any) => node.getAttribute('src'))
+      const [title, date, detailUrl, imageUrl] = await Promise.all([
+        _title,
+        _date,
+        _detailUrl,
+        _imageUrl
+      ])
       data.push({ title, date, detailUrl, imageUrl, kodePromo: '' })
     }
 
@@ -51,12 +55,16 @@ export async function danaEntermainment() {
 
     for (const card of cards) {
       console.log('wait for it')
-      const title = await card.$eval('h3', (h3: any) => h3.innerText)
-      const date = await card.$eval('div[class="date"]', (node: any) => node.innerText)
-      const detailUrl = await card.$eval('a[class="btn_more"]', (node: any) =>
-        node.getAttribute('href')
-      )
-      const imageUrl = await card.$eval('.img_con > img', (node: any) => node.getAttribute('src'))
+      const _title = card.$eval('h3', (h3: any) => h3.innerText)
+      const _date = card.$eval('div[class="date"]', (node: any) => node.innerText)
+      const _detailUrl = card.$eval('a[class="btn_more"]', (node: any) => node.getAttribute('href'))
+      const _imageUrl = card.$eval('.img_con > img', (node: any) => node.getAttribute('src'))
+      const [title, date, detailUrl, imageUrl] = await Promise.all([
+        _title,
+        _date,
+        _detailUrl,
+        _imageUrl
+      ])
       data.push({ title, date, detailUrl, imageUrl, kodePromo: '' })
     }
 
@@ -86,12 +94,16 @@ export async function danaGame() {
 
     for (const card of cards) {
       console.log('wait for it')
-      const title = await card.$eval('h3', (node: any) => node.innerText)
-      const date = await card.$eval('div[class="date"]', (node: any) => node.innerText)
-      const detailUrl = await card.$eval('a[class="btn_more"]', (node: any) =>
-        node.getAttribute('href')
-      )
-      const imageUrl = await card.$eval('.img_con > img', (node: any) => node.getAttribute('src'))
+      const _title = card.$eval('h3', (node: any) => node.innerText)
+      const _date = card.$eval('div[class="date"]', (node: any) => node.innerText)
+      const _detailUrl = card.$eval('a[class="btn_more"]', (node: any) => node.getAttribute('href'))
+      const _imageUrl = card.$eval('.img_con > img', (node: any) => node.getAttribute('src'))
+      const [title, date, detailUrl, imageUrl] = await Promise.all([
+        _title,
+        _date,
+        _detailUrl,
+        _imageUrl
+      ])
       data.push({ title, date, detailUrl, imageUrl, kodePromo: '' })
     }
 
