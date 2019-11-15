@@ -1,4 +1,4 @@
-export default (err: any, req: any, res: any) => {
+export default (err: any, req: any, res: any, next: Function) => {
   let status: number
   let message: string
 
@@ -6,9 +6,15 @@ export default (err: any, req: any, res: any) => {
     res.status(err.response.status).json({ message: err.response.data })
   } else {
     switch (err.name) {
-      case 'Validation Error':
+      case 'MongoError':
+        if (err.code === 11000) {
+          status = 400
+          message = `device_token must be unique`
+        } else {
+          status = 500
+          message = 'Something happened in the database'
+        }
         break
-
       default:
         status = err.status || 500
         message = err.message || 'Internal Server Error'

@@ -1,13 +1,11 @@
 import User, { IUser } from '../models/user'
-import { check } from '../helpers/bcryptjs'
-import { createToken } from '../helpers/jwt'
 
 class UserController {
   static async register(req: any, res: any, next: Function) {
     try {
-      const { email, password, tags } = req.body
-      const user: IUser = await User.create({ email, password, tags })
-      res.status(201).json({ _id: user._id, email: user.email })
+      const { device_token } = req.body
+      await User.create({ device_token })
+      res.status(201).json({ message: 'Device registered' })
     } catch (e) {
       next(e)
     }
@@ -15,13 +13,12 @@ class UserController {
 
   static async login(req: any, res: any, next: Function) {
     try {
-      const { email, password } = req.body
-      const user: IUser = await User.findOne({ email })
-      if (!user && !check(password, user.password)) {
-        next({ status: 400, message: 'Wrong Email / Password' })
+      const { device_token } = req.body
+      const user: IUser = await User.findOne({ device_token })
+      if (user) {
+        res.status(200).json(user)
       } else {
-        const token = createToken({ _id: user._id })
-        res.status(200).json({ token })
+        next({ status: 404, message: 'No user with such device found' })
       }
     } catch (error) {
       next(error)

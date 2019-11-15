@@ -1,20 +1,18 @@
 import { model, Schema, Document } from 'mongoose'
-import { encrypt } from '../helpers/bcryptjs'
 
 export interface IUser extends Document {
-  email: string
-  password: string
-  tags?: string[]
+  device_token: string
+  subscription?: string[]
 }
 
 const userSchema = new Schema({
-  email: { type: String, required: [true, 'Email required'], unique: true },
-  password: { type: String, required: [true, 'Password required'] },
-  tags: { type: [String] },
+  subscription: { type: [String] },
+  device_token: { type: String, unique: true },
 })
 
-userSchema.pre<IUser>('save', async function(next) {
-  this.password = await encrypt(this.password)
+// * Unique Mongoose Handling
+userSchema.post('save', function(error: any, doc: any, next: Function) {
+  if (error) return next(error)
   next()
 })
 

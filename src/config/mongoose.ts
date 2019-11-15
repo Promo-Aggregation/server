@@ -12,6 +12,7 @@ const uri =
         useFindAndModify: false,
         useNewUrlParser: true,
         useUnifiedTopology: true,
+        useCreateIndex: true,
       }
     )
     console.log('Connected to mongodb', uri)
