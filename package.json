@@ -7,7 +7,7 @@
     "test": "mocha dist/tests --recursive --exit",
     "dev": "tsc -w & nodemon",
     "clean": "rm -rf dist",
-    "compile": "tsc",
+    "compile": "yarn clean && tsc",
     "start": "yarn compile && node dist/bin/http.js"
   },
   "repository": {

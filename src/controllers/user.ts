@@ -15,7 +15,11 @@ class UserController {
     try {
       const { device_token } = req.body
       const user: IUser = await User.findOne({ device_token })
-      res.status(200).json(user)
+      if (user) {
+        res.status(200).json(user)
+      } else {
+        next({ status: 404, message: 'No user with such device found' })
+      }
     } catch (error) {
       next(error)
     }
