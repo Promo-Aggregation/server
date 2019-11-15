@@ -9,11 +9,7 @@ export default (err: any, req: any, res: any, next: Function) => {
       case 'MongoError':
         if (err.code === 11000) {
           status = 400
-          const keys = Object.keys(err.keyPattern)
-          const joinKey = keys
-            .map((el) => el[0].toUpperCase() + el.substring(1))
-            .join(', ')
-          message = `${joinKey} must be unique`
+          message = `device_token must be unique`
         } else {
           status = 500
           message = 'Something happened in the database'
