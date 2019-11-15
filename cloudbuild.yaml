@@ -7,10 +7,6 @@ steps:
     args: ["run", "test"]
     env:
       - "MONGO_DB=mongodb+srv://admin:admin@tigorhutasuhut-vdnzf.mongodb.net/promo-aggregrator-testing?retryWrites=true&w=majority"
-  # - name: "gcr.io/cloud-builders/npm"
-  #   args: ["run", "start"]
-  #   env:
-  #     - "MONGO_DB=mongodb+srv://admin:admin@tigorhutasuhut-vdnzf.mongodb.net/promo-aggregrator?retryWrites=true&w=majority"
   - name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy"]
     env:
