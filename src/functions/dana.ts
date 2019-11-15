@@ -1,4 +1,4 @@
-const pptr = require('puppeteer')
+import pptr from 'puppeteer'
 
 export async function danaFood() {
   const browser = await pptr.launch({
@@ -8,6 +8,7 @@ export async function danaFood() {
   const data = []
   try {
     const page = await browser.newPage()
+    page.setDefaultTimeout(0)
     await page.goto('https://dana.id/promo/cate/Food/1', { waitUntil: 'networkidle2', timeout: 0 })
     await page.waitForSelector('.section')
 
