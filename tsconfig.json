@@ -4,12 +4,12 @@
     "module": "commonjs",
     "esModuleInterop": true,
     "target": "es2018",
-    "lib": ["es2018"],
+    "lib": ["es2018", "dom"],
     "moduleResolution": "node",
     "sourceMap": true,
     "outDir": "dist",
     "baseUrl": "."
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["/node_modules/"]
 }
