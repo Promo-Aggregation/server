@@ -5,6 +5,18 @@ interface Where {
 }
 
 class PromoDBController {
+  static async findAll(req: any, res: any, next: Function) {
+    try {
+      const { sort = 'createdAt', order = -1, offset = 0, limit = 20 } = req.query
+      const promos: IPromoModel[] = await Promo.find({})
+        .limit(limit)
+        .skip(offset)
+        .sort({ [sort]: order })
+      res.status(200).json(promos)
+    } catch (e) {
+      next(e)
+    }
+  }
   static async search(req: any, res: any, next: Function) {
     try {
       const { q = '', sort = 'createdAt', order = -1, offset = 0, limit = 20 } = req.query
@@ -19,7 +31,7 @@ class PromoDBController {
       next(e)
     }
   }
-  static async searchByTags(req: any, res: any, next: Function) {
+  static async getByTags(req: any, res: any, next: Function) {
     try {
       const { sort = 'createdAt', order = -1, offset = 0, limit = 20, tags = null } = req.query
       if (!tags) return next({ status: 400, message: 'Please set tags to search promos' })

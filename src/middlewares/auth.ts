@@ -1,4 +1,4 @@
-import { User, IUserModel } from 'src/models'
+import { User, IUserModel } from '../models'
 
 export const authentication = async (req: any, res: any, next: Function) => {
   const { device_token } = req.headers

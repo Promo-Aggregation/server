@@ -1,4 +1,4 @@
-import { IUserModel, User } from 'src/models'
+import { IUserModel, User } from '../models'
 
 class SubscriptionController {
   static async subscribe(req: any, res: any, next: Function) {
