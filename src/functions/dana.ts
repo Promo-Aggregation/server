@@ -34,7 +34,6 @@ export async function danaFood() {
     // console.log('ITS SHOWING')
     await browser.close()
     shell.exec('pkill chrome')
-
     return data
   } catch (err) {
     await browser.close()
