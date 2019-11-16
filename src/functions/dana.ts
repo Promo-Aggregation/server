@@ -33,7 +33,7 @@ export async function danaFood() {
     // console.log(data)
     // console.log('ITS SHOWING')
     await browser.close()
-    shell.exec('pkill chrome')
+    // shell.exec('pkill chrome')
     return data
   } catch (err) {
     console.log(err)
@@ -73,7 +73,7 @@ export async function danaEntermainment() {
     // console.log(data)
     // console.log('ITS SHOWING')
     await browser.close()
-    shell.exec('pkill chrome')
+    // shell.exec('pkill chrome')
 
     return data
   } catch (err) {
@@ -114,7 +114,7 @@ export async function danaGame() {
     // console.log(data)
     // console.log('ITS SHOWING')
     await browser.close()
-    shell.exec('pkill chrome')
+    // shell.exec('pkill chrome')
     return data
   } catch (err) {
     console.log(err)
