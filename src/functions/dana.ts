@@ -3,7 +3,8 @@ import pptr from 'puppeteer'
 export async function danaFood() {
   const browser = await pptr.launch({
     headless: true,
-    defaultViewport: { width: 1100, height: 600 }
+    defaultViewport: { width: 1100, height: 600 },
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
   })
   const data = []
   try {
@@ -43,7 +44,8 @@ export async function danaFood() {
 export async function danaEntermainment() {
   const browser = await pptr.launch({
     headless: true,
-    defaultViewport: { width: 1100, height: 600 }
+    defaultViewport: { width: 1100, height: 600 },
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
   })
   const data = []
   try {
@@ -82,7 +84,8 @@ export async function danaEntermainment() {
 export async function danaGame() {
   const browser = await pptr.launch({
     headless: true,
-    defaultViewport: { width: 1100, height: 600 }
+    defaultViewport: { width: 1100, height: 600 },
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
   })
   const data = []
   try {
