@@ -4,8 +4,8 @@
   "description": "Backend for Project Promo Aggregation",
   "main": "dist/bin/http.js",
   "scripts": {
-    "test": "mocha dist/tests --recursive --exit",
-    "dev": "tsc -w & nodemon",
+    "test": "NODE_ENV=test mocha dist/tests --recursive --exit",
+    "dev": "tsc -w & NODE_ENV=development nodemon",
     "clean": "rm -rf dist",
     "compile": "npm run clean && tsc",
     "start": "node dist/bin/http.js",

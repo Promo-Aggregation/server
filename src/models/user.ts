@@ -1,14 +1,16 @@
 import { model, Schema, Document } from 'mongoose'
 
-export interface IUser extends Document {
+export interface IUser {
   device_token: string
-  subscription?: string[]
+  subscription: string[]
 }
+
+export interface IUserModel extends IUser, Document {}
 
 const userSchema = new Schema(
   {
     subscription: { type: [String] },
-    device_token: { type: String, unique: true }
+    device_token: { type: String, unique: true, select: false }
   },
   { timestamps: true }
 )
@@ -19,4 +21,4 @@ userSchema.post('save', function(error: any, doc: any, next: Function) {
   next()
 })
 
-export default model<IUser>('Users', userSchema)
+export default model<IUserModel>('Users', userSchema)

@@ -41,7 +41,7 @@ export async function danaFood() {
   }
 }
 
-export async function danaEntermainment() {
+export async function danaEntertainment() {
   const browser = await pptr.launch({
     headless: true,
     defaultViewport: { width: 1100, height: 600 },
