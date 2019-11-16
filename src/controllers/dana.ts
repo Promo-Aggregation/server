@@ -6,7 +6,7 @@ class DanaController {
     try {
       const foods: any[] = await danaFood()
       const data: IPromoModel[] = await Promo.insertMany(foods)
-      console.log(data)
+      // console.log(data)
       res.status(200).json(data)
     } catch (err) {
       next(err)
@@ -17,7 +17,7 @@ class DanaController {
     try {
       const games: any[] = await danaGame()
       const data: IPromoModel[] = await Promo.insertMany(games)
-      console.log(data)
+      // console.log(data)
       res.status(200).json(data)
     } catch (err) {
       next(err)
@@ -28,7 +28,7 @@ class DanaController {
     try {
       const entertainments: any[] = await danaEntermainment()
       const data: IPromoModel[] = await Promo.insertMany(entertainments)
-      console.log(data)
+      // console.log(data)
       res.status(200).json(data)
     } catch (err) {
       next(err)
