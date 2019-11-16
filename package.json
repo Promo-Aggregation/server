@@ -4,14 +4,14 @@
   "description": "Backend for Project Promo Aggregation",
   "main": "dist/bin/http.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha dist/tests --recursive --exit",
+    "test": "npm run compile && NODE_ENV=test mocha dist/tests --recursive --exit",
     "dev": "tsc -w & NODE_ENV=development nodemon",
     "clean": "rm -rf dist",
     "compile": "npm run clean && tsc",
     "start": "node dist/bin/http.js",
     "puppeteer": "npm install puppeteer --unsafe-perm=true --allow-root",
     "deploy": "npm run compile && pm2 start dist/bin/http.js --watch && pm2 start dist/bin/https.js --watch",
-    "redeploy": "pm2 delete http && pm2 delete https && git pull origin development && npm run deploy"
+    "redeploy": "pm2 delete /*/ && git pull origin development && npm run deploy"
   },
   "repository": {
     "type": "git",
