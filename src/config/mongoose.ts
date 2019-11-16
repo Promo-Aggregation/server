@@ -2,9 +2,9 @@ import { connect } from 'mongoose'
 
 const environment = process.env.NODE_ENV || ''
 const database = process.env.DATABASE || 'Promo-Aggregator'
-const uri =
-    'mongodb+srv://admin:admin@tigorhutasuhut-vdnzf.mongodb.net/Process-Aggregator?retryWrites=true&w=majority'
-  // const uri = 'mongodb://localhost:27017/' + database + environment
+// const uri =
+//     'mongodb+srv://admin:admin@tigorhutasuhut-vdnzf.mongodb.net/Process-Aggregator?retryWrites=true&w=majority'
+const uri = 'mongodb://localhost:27017/' + database + environment
 ;(async () => {
   try {
     await connect(
