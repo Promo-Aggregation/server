@@ -1,4 +1,5 @@
 import pptr from 'puppeteer'
+import shell from 'shelljs'
 
 export async function danaFood() {
   const browser = await pptr.launch({
@@ -32,6 +33,7 @@ export async function danaFood() {
     // console.log(data)
     // console.log('ITS SHOWING')
     await browser.close()
+    shell.exec('pkill chrome')
 
     return data
   } catch (err) {
