@@ -3,7 +3,7 @@ import https from 'https'
 import fs from 'fs'
 
 const domain = process.env.DOMAIN
-const port = 443
+const PORT = 443
 
 const options = {
   cert: fs.readFileSync(`/etc/letsencrypt/live/${domain}/fullchain.pem`),
@@ -12,4 +12,4 @@ const options = {
 
 const server = https.createServer(options, app)
 
-server.listen(port, () => console.log('HTTPS Server running on port', port))
+server.listen(PORT, () => console.log('HTTPS Server running on port', PORT))
