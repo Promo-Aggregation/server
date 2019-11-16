@@ -10,7 +10,7 @@ import './cron'
 const app = express()
 
 app.use(morgan('dev'))
-app.use(cors())
+app.use(cors({ exposedHeaders: ['count'] }))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use('/', routes)
