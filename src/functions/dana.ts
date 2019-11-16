@@ -27,7 +27,7 @@ export async function danaFood() {
         _detailUrl,
         _imageUrl
       ])
-      data.push({ title, date, detailUrl, imageUrl, kodePromo: '' })
+      data.push({ title, date, detailUrl, imageUrl, kodePromo: '', tags: ['dana', 'food'] })
     }
 
     // console.log(data)
@@ -67,7 +67,14 @@ export async function danaEntermainment() {
         _detailUrl,
         _imageUrl
       ])
-      data.push({ title, date, detailUrl, imageUrl, kodePromo: '' })
+      data.push({
+        title,
+        date,
+        detailUrl,
+        imageUrl,
+        kodePromo: '',
+        tags: ['dana', 'entertainment']
+      })
     }
 
     // console.log(data)
@@ -108,7 +115,7 @@ export async function danaGame() {
         _detailUrl,
         _imageUrl
       ])
-      data.push({ title, date, detailUrl, imageUrl, kodePromo: '' })
+      data.push({ title, date, detailUrl, imageUrl, kodePromo: '', tags: ['dana', 'game'] })
     }
 
     // console.log(data)
