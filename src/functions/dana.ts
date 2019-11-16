@@ -1,11 +1,9 @@
 import pptr from 'puppeteer'
-import shell from 'shelljs'
 
 export async function danaFood() {
   const browser = await pptr.launch({
     headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox']
-    // slowMo: 100
   })
   const data = []
   try {
@@ -14,9 +12,7 @@ export async function danaFood() {
     await page.waitForSelector('.section')
 
     const cards = await page.$$('.card_promo')
-    // console.log(cards)
     for (const card of cards) {
-      // console.log('wait for it')
       const _title = card.$eval('h3', (h3: any) => h3.innerText)
       const _date = card.$eval('div[class="date"]', (date: any) => date.innerText)
       const _detailUrl = card.$eval('a[class="btn_more"]', (date: any) => date.getAttribute('href'))
@@ -30,10 +26,7 @@ export async function danaFood() {
       data.push({ title, date, detailUrl, imageUrl, kodePromo: '' })
     }
 
-    // console.log(data)
-    // console.log('ITS SHOWING')
     await browser.close()
-    // shell.exec('pkill chrome')
     return data
   } catch (err) {
     console.log(err)
@@ -70,10 +63,7 @@ export async function danaEntertainment() {
       data.push({ title, date, detailUrl, imageUrl, kodePromo: '' })
     }
 
-    // console.log(data)
-    // console.log('ITS SHOWING')
     await browser.close()
-    // shell.exec('pkill chrome')
 
     return data
   } catch (err) {
@@ -97,7 +87,6 @@ export async function danaGame() {
     const cards = await page.$$('.card_promo')
 
     for (const card of cards) {
-      // console.log('wait for it')
       const _title = card.$eval('h3', (node: any) => node.innerText)
       const _date = card.$eval('div[class="date"]', (node: any) => node.innerText)
       const _detailUrl = card.$eval('a[class="btn_more"]', (node: any) => node.getAttribute('href'))
@@ -111,10 +100,7 @@ export async function danaGame() {
       data.push({ title, date, detailUrl, imageUrl, kodePromo: '' })
     }
 
-    // console.log(data)
-    // console.log('ITS SHOWING')
     await browser.close()
-    // shell.exec('pkill chrome')
     return data
   } catch (err) {
     console.log(err)
