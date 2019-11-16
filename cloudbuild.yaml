@@ -3,6 +3,8 @@ steps:
     args: ["install"]
   - name: "gcr.io/cloud-builders/npm"
     args: ["run", "puppeteer"]
+  - name: "ubuntu"
+    args: ["bash", "./puppeteer.bash"]
   - name: "gcr.io/cloud-builders/npm"
     args: ["run", "compile"]
   - name: "gcr.io/cloud-builders/npm"
