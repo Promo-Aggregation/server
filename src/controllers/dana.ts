@@ -1,5 +1,4 @@
 import { danaFood, danaGame, danaEntertainment } from '../functions/dana'
-import { Promo } from '../models'
 import Redis from 'ioredis'
 
 const redis = new Redis()
@@ -12,11 +11,8 @@ class DanaFetchController {
         res.status(200).json(JSON.parse(danaFoodCache))
       } else {
         const foods: any[] = await danaFood()
-        console.log(foods)
-        const a: any[] = await Promo.insertMany(foods)
-        console.log(a)
-        // await redis.set('dana-food', JSON.stringify(foods))
-        res.status(200).json(a)
+        await redis.set('dana-food', JSON.stringify(foods))
+        res.status(200).json(foods)
       }
     } catch (err) {
       next(err)
