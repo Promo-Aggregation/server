@@ -8,7 +8,7 @@ import app from '../../app'
 const expect = chai.expect
 chai.use(chaiHttp)
 
-describe('User Login Testing', function() {
+describe.only('User Login Testing', function() {
   this.timeout(10000)
   const userData = { device_token: '12345' }
   before(() => User.create(userData))
