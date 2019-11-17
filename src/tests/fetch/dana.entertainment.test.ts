@@ -9,7 +9,8 @@ const expect = chai.expect
 chai.use(chaiHttp)
 
 describe('Get Dana Entertainment', function() {
-  this.timeout(10000)
+  // this.timeout(30000)
+  this.timeout(0)
   after(() => Promo.deleteMany({}))
 
   it('Success Get Dana Entertainment', function(done) {
@@ -27,6 +28,8 @@ describe('Get Dana Entertainment', function() {
           expect(el).to.have.property('detailUrl')
           expect(el).to.have.property('imageUrl')
           expect(el).to.have.property('kodePromo')
+          expect(el).to.have.property('tags')
+          expect(el).to.have.property('detail')
         })
         done()
       })

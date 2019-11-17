@@ -8,13 +8,13 @@ import app from '../../app'
 const expect = chai.expect
 chai.use(chaiHttp)
 
-describe.only('User Login Testing', function() {
+describe('User Login Testing', function() {
   this.timeout(10000)
   const userData = { device_token: '12345' }
   before(() => User.create(userData))
   after(() => User.deleteMany({}))
 
-  it('Success User Login', (done) => {
+  it('Success User Login', done => {
     chai
       .request(app)
       .post('/users/login')
@@ -34,7 +34,7 @@ describe.only('User Login Testing', function() {
       })
   })
 
-  it('Fails User Login - No such token', (done) => {
+  it('Fails User Login - No such token', done => {
     const wrongData = { device_token: '98765' }
     chai
       .request(app)

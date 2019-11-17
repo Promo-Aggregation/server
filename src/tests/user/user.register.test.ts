@@ -13,7 +13,7 @@ describe('User Register Testing', function() {
   this.timeout(10000)
   after(() => User.deleteMany({}))
 
-  it('Success User Register', (done) => {
+  it('Success User Register', done => {
     const userData = { device_token: '98765' }
     chai
       .request(app)
@@ -28,7 +28,7 @@ describe('User Register Testing', function() {
       })
   })
 
-  it('Fail User Register - Duplicate', (done) => {
+  it('Fail User Register - Duplicate', done => {
     const userData = { device_token: '98765' }
     chai
       .request(app)
