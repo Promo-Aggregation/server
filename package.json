@@ -10,7 +10,7 @@
     "compile": "npm run clean && tsc",
     "start": "node dist/bin/http.js",
     "puppeteer": "npm install puppeteer --unsafe-perm=true --allow-root",
-    "deploy": "pm2 delete /.*/ && npm run compile && pm2 start dist/bin/http.js --watch && pm2 start dist/bin/https.js --watch",
+    "deploy": "npm run compile && pm2 start dist/bin/http.js --watch && pm2 start dist/bin/https.js --watch",
     "redeploy": "pm2 delete /.*/ && git pull origin development && npm run deploy"
   },
   "repository": {
