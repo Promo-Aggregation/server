@@ -11,4 +11,11 @@ router.use('/users', users)
 router.use('/fetch', fetch)
 router.use('/promos', promos)
 
+router.get('/*', (req, res, next) =>
+  next({
+    status: 404,
+    message: 'Requested URI does not exist. Did you type the request correctly?'
+  })
+)
+
 export default router
