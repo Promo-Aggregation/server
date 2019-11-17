@@ -7,12 +7,10 @@ async function getGeneralData(page: any, category: string) {
 
   for (const card of cards) {
     console.log('wait for it')
-    const _title = await card.$eval('h3', (h3: any) => h3.innerText)
-    const _date = await card.$eval('div[class="date"]', (date: any) => date.innerText)
-    const _detailUrl = await card.$eval('a[class="btn_more"]', (node: any) =>
-      node.getAttribute('href')
-    )
-    const _imageUrl = await card.$eval('.img_con > img', (node: any) => node.getAttribute('src'))
+    const _title = card.$eval('h3', (h3: any) => h3.innerText)
+    const _date = card.$eval('div[class="date"]', (date: any) => date.innerText)
+    const _detailUrl = card.$eval('a[class="btn_more"]', (node: any) => node.getAttribute('href'))
+    const _imageUrl = card.$eval('.img_con > img', (node: any) => node.getAttribute('src'))
 
     const [title, date, detailUrl, imageUrl] = await Promise.all([
       _title,
