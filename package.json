@@ -58,7 +58,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.10",
     "morgan": "^1.9.1",
-    "puppeteer": "1.10.0"
+    "puppeteer": "^1.10.0"
   },
   "custom-puppeteer": "1.10.0"
 }
