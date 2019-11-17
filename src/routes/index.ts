@@ -11,7 +11,7 @@ router.get('/', (req, res) => res.status(200).json({ message: 'Server test ok!' 
 router.use('/users', users)
 router.use('/fetch', fetch)
 router.use('/promos', promos)
-router.use('/subscribe', subscribe)
+router.use('/subscriptions', subscribe)
 
 router.get('/*', (req, res, next) =>
   next({
