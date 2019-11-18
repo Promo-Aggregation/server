@@ -34,8 +34,8 @@ async function getDetailData(page: any) {
     console.log('wait for it')
     const browser = await pptr.launch({
       headless: true,
-      defaultViewport: { width: 1100, height: 600 }
-      // args: ['--no-sandbox', '--disable-setuid-sandbox']
+      defaultViewport: { width: 1100, height: 600 },
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
     })
     const page = await browser.newPage()
     const hrefValue = await (await allDetailLinks[i].getProperty('href')).jsonValue()
