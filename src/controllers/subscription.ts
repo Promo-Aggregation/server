@@ -7,7 +7,7 @@ class SubscriptionController {
       const { device_token } = req
       const user: IUserModel = await User.findOneAndUpdate(
         { device_token },
-        { $push: { subscription: { $each: req.body.tags } } },
+        { $addToSet: { subscription: { $each: req.body.tags } } },
         { new: true }
       )
       res.status(200).json(user)
