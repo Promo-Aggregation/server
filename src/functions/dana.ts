@@ -35,6 +35,7 @@ async function getDetailData(page: any) {
     const browser = await pptr.launch({
       headless: true,
       defaultViewport: { width: 1100, height: 600 }
+      // args: ['--no-sandbox', '--disable-setuid-sandbox']
     })
     const page = await browser.newPage()
     const hrefValue = await (await allDetailLinks[i].getProperty('href')).jsonValue()
@@ -44,7 +45,7 @@ async function getDetailData(page: any) {
       const detail = { syaratKetentuan: [], cara: [] }
       await page.goto(hrefValue + 'full', { waitUntil: 'networkidle2', timeout: 0 })
       const detailItem = await page.evaluate(() =>
-        Array.from(document.querySelectorAll('li'), element => element.textContent)
+        Array.from(document.querySelectorAll('li'), (element) => element.textContent)
       )
 
       for (let j = 0; j < detailItem.length; j++) {
@@ -100,8 +101,8 @@ export async function danaFood() {
 export async function danaEntertainment() {
   const browser = await pptr.launch({
     headless: true,
-    defaultViewport: { width: 1100, height: 600 },
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    defaultViewport: { width: 1100, height: 600 }
+    // args: ['--no-sandbox', '--disable-setuid-sandbox']
   })
   const data = []
   try {
@@ -129,8 +130,8 @@ export async function danaEntertainment() {
 export async function danaGame() {
   const browser = await pptr.launch({
     headless: true,
-    defaultViewport: { width: 1100, height: 600 },
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    defaultViewport: { width: 1100, height: 600 }
+    // args: ['--no-sandbox', '--disable-setuid-sandbox']
   })
   const data = []
   try {
