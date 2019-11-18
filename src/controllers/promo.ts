@@ -73,8 +73,11 @@ class PromoDBController {
       const { sort = 'createdAt', order = -1, offset = 0, limit = 20 } = req.query
       const { subscription } = req
       let where: Where = {}
-      if (subscription.length) where.tags = { $in: subscription }
-
+      if (subscription.length) {
+        where.tags = { $in: subscription }
+      } else {
+        return res.status(200).json([])
+      }
       const [promos, count] = await Promise.all([
         Promo.find(where)
           .limit(Number(limit))
