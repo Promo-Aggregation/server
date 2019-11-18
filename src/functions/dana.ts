@@ -101,8 +101,8 @@ export async function danaFood() {
 export async function danaEntertainment() {
   const browser = await pptr.launch({
     headless: true,
-    defaultViewport: { width: 1100, height: 600 }
-    // args: ['--no-sandbox', '--disable-setuid-sandbox']
+    defaultViewport: { width: 1100, height: 600 },
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
   })
   const data = []
   try {
@@ -130,8 +130,8 @@ export async function danaEntertainment() {
 export async function danaGame() {
   const browser = await pptr.launch({
     headless: true,
-    defaultViewport: { width: 1100, height: 600 }
-    // args: ['--no-sandbox', '--disable-setuid-sandbox']
+    defaultViewport: { width: 1100, height: 600 },
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
   })
   const data = []
   try {
