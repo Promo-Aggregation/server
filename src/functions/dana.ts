@@ -85,11 +85,9 @@ export async function danaFood() {
 
     const [generalData, detailData] = await Promise.all([Promise.all(foo), getDetailData(page)])
 
-    generalData.forEach(gD => {
-      detailData.forEach(dd => {
-        data.push({ ...gD, detail: { ...dd } })
-      })
-    })
+    for (let i = 0; i < generalData.length; i++) {
+      data.push({ ...generalData[i], detail: { ...detailData[i] } })
+    }
 
     await browser.close()
     return data
@@ -115,11 +113,9 @@ export async function danaEntertainment() {
 
     const [generalData, detailData] = await Promise.all([Promise.all(foo), getDetailData(page)])
 
-    generalData.forEach(gD => {
-      detailData.forEach(dd => {
-        data.push({ ...gD, detail: { ...dd } })
-      })
-    })
+    for (let i = 0; i < generalData.length; i++) {
+      data.push({ ...generalData[i], detail: { ...detailData[i] } })
+    }
 
     await browser.close()
 
@@ -139,18 +135,16 @@ export async function danaGame() {
   const data = []
   try {
     const page = await browser.newPage()
-    await page.goto('https://dana.id/promo/cate/Game/1', { waitUntil: 'networkidle2' })
+    await page.goto('https://dana.id/promo/cate/Game/1', { waitUntil: 'networkidle2', timeout: 0 })
     await page.waitForSelector('.section')
 
     const foo = await getGeneralData(page, 'game')
 
     const [generalData, detailData] = await Promise.all([Promise.all(foo), getDetailData(page)])
 
-    generalData.forEach(gD => {
-      detailData.forEach(dd => {
-        data.push({ ...gD, detail: { ...dd } })
-      })
-    })
+    for (let i = 0; i < generalData.length; i++) {
+      data.push({ ...generalData[i], detail: { ...detailData[i] } })
+    }
 
     await browser.close()
     return data

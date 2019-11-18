@@ -6,6 +6,11 @@ export interface IPromo {
   detailUrl: string
   imageUrl: string
   kodePromo: string
+  tags: string[]
+  detail: {
+    syaratKetentuan: string[]
+    cara: string[]
+  }
 }
 
 export interface IPromoModel extends IPromo, Document {}
@@ -16,7 +21,13 @@ const promosSchema = new Schema(
     date: { type: String },
     detailUrl: { type: String },
     imageUrl: { type: String },
-    kodePromo: { type: String }
+    kodePromo: { type: String },
+    tags: [
+      {
+        type: String
+      }
+    ],
+    detail: { syaratKetentuan: [], cara: [] }
   },
   { timestamps: true, versionKey: false }
 )
