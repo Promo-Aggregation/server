@@ -1,6 +1,7 @@
 import pptr from 'puppeteer'
 
 async function getGeneralData(page: any, category: string) {
+  process.setMaxListeners(Infinity)
   const cards = await page.$$('.card_promo')
 
   const data: any[] = []
@@ -26,6 +27,7 @@ async function getGeneralData(page: any, category: string) {
 }
 
 async function getDetailData(page: any) {
+  process.setMaxListeners(Infinity)
   const allDetailLinks = await page.$$('a[class="btn_more"]')
 
   const data: any[] = []
@@ -72,6 +74,7 @@ async function getDetailData(page: any) {
 }
 
 export async function danaFood() {
+  process.setMaxListeners(Infinity)
   const browser = await pptr.launch({
     headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox']
@@ -99,6 +102,7 @@ export async function danaFood() {
 }
 
 export async function danaEntertainment() {
+  process.setMaxListeners(Infinity)
   const browser = await pptr.launch({
     headless: true,
     defaultViewport: { width: 1100, height: 600 },
@@ -128,6 +132,7 @@ export async function danaEntertainment() {
 }
 
 export async function danaGame() {
+  process.setMaxListeners(Infinity)
   const browser = await pptr.launch({
     headless: true,
     defaultViewport: { width: 1100, height: 600 },
