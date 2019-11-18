@@ -5,6 +5,8 @@ import promos from './promos'
 import subscribe from './subscribe'
 import { Request, Response, NextFunction } from 'express'
 import Redis from 'ioredis'
+import { danaFood, danaGame, danaEntertainment } from '../functions/dana'
+import { Promo } from '../models'
 
 const redis = new Redis()
 
@@ -23,6 +25,18 @@ router.get('/cache/clear', async (req: Request, res: Response, next: NextFunctio
     res.status(200).send({ message: 'Cache cleared' })
   } catch (e) {
     next(e)
+  }
+})
+router.get('/seed/dana', async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const [foods, games, entertainments] = await Promise.all([
+      danaFood(),
+      danaGame(),
+      danaEntertainment()
+    ])
+    await Promise.all([Promo.insertMany([...foods, ...games, ...entertainments])])
+  } catch (e) {
+    console.log(e)
   }
 })
 
