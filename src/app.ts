@@ -7,6 +7,15 @@ import errorHandler from './middlewares/errorHandler'
 import './config/mongoose'
 import './cron'
 
+declare global {
+  namespace Express {
+    interface Request {
+      device_token: string | string[]
+      subscription: string[]
+    }
+  }
+}
+
 const app = express()
 
 app.use(morgan('dev'))

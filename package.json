@@ -11,7 +11,7 @@
     "start": "node dist/bin/http.js",
     "puppeteer": "npm install puppeteer --unsafe-perm=true --allow-root",
     "deploy": "npm run compile && pm2 start dist/bin/http.js --watch && pm2 start dist/bin/https.js --watch",
-    "redeploy": "pm2 delete /.*/ && git pull origin development && npm run deploy"
+    "redeploy": "pm2 delete all && git pull origin development && npm run deploy"
   },
   "repository": {
     "type": "git",

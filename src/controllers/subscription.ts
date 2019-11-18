@@ -1,24 +1,33 @@
-import { IUserModel, User } from '../models'
+import User, { IUserModel } from '../models/user'
+import { Request, Response, NextFunction } from 'express'
 
 class SubscriptionController {
-  static async subscribe(req: any, res: any, next: Function) {
-    const { device_token } = req.device_token
-    const user: IUserModel = await User.findOneAndUpdate(
-      { device_token },
-      { $push: { tags: { $each: res.tags } } },
-      { new: true }
-    )
-    res.status(200).json(user)
+  static async subscribe(req: Request, res: Response, next: NextFunction) {
+    try {
+      const { device_token } = req
+      const user: IUserModel = await User.findOneAndUpdate(
+        { device_token },
+        { $push: { subscription: { $each: req.body.tags } } },
+        { new: true }
+      )
+      res.status(200).json(user)
+    } catch (e) {
+      next(e)
+    }
   }
 
   static async unsubscribe(req: any, res: any, next: Function) {
-    const { device_token } = req.device_token
-    const user: IUserModel = await User.findOneAndUpdate(
-      { device_token },
-      { $pull: { tags: { $each: res.tags } } },
-      { new: true }
-    )
-    res.status(200).json(user)
+    try {
+      const { device_token } = req
+      const user: IUserModel = await User.findOneAndUpdate(
+        { device_token },
+        { $pull: { subscription: { $in: req.body.tags } } },
+        { new: true }
+      )
+      res.status(200).json(user)
+    } catch (e) {
+      next(e)
+    }
   }
 }
 

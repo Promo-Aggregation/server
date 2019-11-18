@@ -1,4 +1,7 @@
-export default (err: any, req: any, res: any, next: Function) => {
+import { Request, Response, NextFunction } from 'express'
+
+export default (err: any, req: Request, res: Response, next: NextFunction) => {
+  console.log(err.message)
   let status: number
   let message: string
 
