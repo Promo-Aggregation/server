@@ -12,7 +12,7 @@ const redis = new Redis()
 
 const router = Router()
 
-router.get('/', (req, res) => res.status(200).json({ message: 'Server test ok!' }))
+router.get('/', (req: Request, res: Response) => res.status(200).json({ message: 'Server test ok!' }))
 
 router.use('/users', users)
 router.use('/fetch', fetch)

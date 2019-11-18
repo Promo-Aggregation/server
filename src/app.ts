@@ -5,7 +5,7 @@ import cors from 'cors'
 import routes from './routes'
 import errorHandler from './middlewares/errorHandler'
 import './config/mongoose'
-import './cron'
+// import './cron'
 
 declare global {
   namespace Express {
