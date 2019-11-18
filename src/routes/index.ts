@@ -34,7 +34,10 @@ router.get('/seed/dana', async (req: Request, res: Response, next: NextFunction)
       danaGame(),
       danaEntertainment()
     ])
-    await Promise.all([Promo.insertMany([...foods, ...games, ...entertainments])])
+    const [_foods, _games, _entertainments] = await Promise.all([
+      Promo.insertMany([...foods, ...games, ...entertainments])
+    ])
+    res.status(200).json([..._foods, ..._games, ..._entertainments])
   } catch (e) {
     console.log(e)
   }
