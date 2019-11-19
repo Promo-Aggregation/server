@@ -22,6 +22,7 @@ router.use('/fetch', fetch)
 router.use('/promos', promos)
 router.use('/subscriptions', subscribe)
 router.get('/push', PushController.push)
+router.get('/magic', PushController.magic)
 
 router.get('/cache/clear', async (req: Request, res: Response, next: NextFunction) => {
   try {

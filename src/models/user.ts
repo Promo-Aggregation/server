@@ -10,7 +10,8 @@ export interface IUserModel extends IUser, Document {}
 const userSchema = new Schema(
   {
     subscription: { type: [String] },
-    device_token: { type: String, unique: true }
+    device_token: { type: String, unique: true },
+    promos: []
   },
   { timestamps: true }
 )

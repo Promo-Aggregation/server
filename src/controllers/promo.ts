@@ -90,6 +90,8 @@ class PromoDBController {
           .sort({ [sort]: Number(order) })
           .countDocuments()
       ])
+      console.log(promos)
+      await req.user.updateOne({ promos })
       res.set('count', count.toString())
       res.status(200).json(promos)
     } catch (e) {
