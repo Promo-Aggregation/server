@@ -15,4 +15,6 @@ router.get('/subscribed', authentication, PromoDBController.getBySubscriptions)
 // ! Tags are required or throws an error
 router.get('/tags', PromoDBController.getByTags)
 
+router.get('/searchWithTags', PromoDBController.searchWithTags)
+
 export default router
