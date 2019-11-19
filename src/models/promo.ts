@@ -11,7 +11,7 @@ export interface IPromo {
     syaratKetentuan: string[]
     cara: string[]
   }
-  minimalTransaction: string
+  minimalTransaction: number
   cashback: number
 }
 
@@ -30,7 +30,7 @@ const promosSchema = new Schema(
       }
     ],
     detail: { syaratKetentuan: [], cara: [] },
-    minimalTransaction: { type: String },
+    minimalTransaction: { type: Number },
     cashback: { type: Number }
   },
   { timestamps: true, versionKey: false }
