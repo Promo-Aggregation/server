@@ -18,13 +18,13 @@ export default class PushController {
         method: 'POST',
         data: {
           to: arr,
-          body: 'New promos available!!'
+          body: 'New promos available!!',
         },
         headers: {
           host: 'exp.host',
           accept: 'application/json',
-          'content-type': 'application/json'
-        }
+          'content-type': 'application/json',
+        },
       })
       res.status(200).json({ message: 'Push sent' })
     } catch (e) {
@@ -39,13 +39,13 @@ export default class PushController {
         danaFood(),
         danaGame(),
         danaEntertainment(),
-        ovoFood()
+        ovoFood(),
       ])
       const aggregatedPromos: IPromoModel[] = [
         ...danaFoods,
         ...danaGames,
         ...danaEntertainments,
-        ...ovoFoods
+        ...ovoFoods,
       ]
       for (let i = 0; i < users.length; i++) {
         const user = users[i]
@@ -53,19 +53,20 @@ export default class PushController {
         const newPromos = aggregatedPromos.filter((aP: IPromoModel) =>
           aP.tags.some((tag) => user.subscription.includes(tag))
         )
+        const amountTrulyNewPromos = aggregatedPromos.length - newPromos.length
         console.log(newPromos.length)
         await axios({
           url: 'https://exp.host/--/api/v2/push/send',
           method: 'POST',
           data: {
             to: user.device_token,
-            body: `There are new ${newPromos.length} recommended promos curated for you`
+            body: `There are new ${amountTrulyNewPromos} recommended promos curated for you`,
           },
           headers: {
             host: 'exp.host',
             accept: 'application/json',
-            'content-type': 'application/json'
-          }
+            'content-type': 'application/json',
+          },
         })
       }
       res.status(200).json({ message: 'Magic Push sent' })
