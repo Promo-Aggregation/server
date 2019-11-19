@@ -11,6 +11,7 @@ export interface IPromo {
     syaratKetentuan: string[]
     cara: string[]
   }
+  minimalTransaction: string
 }
 
 export interface IPromoModel extends IPromo, Document {}
@@ -27,7 +28,8 @@ const promosSchema = new Schema(
         type: String
       }
     ],
-    detail: { syaratKetentuan: [], cara: [] }
+    detail: { syaratKetentuan: [], cara: [] },
+    minimalTransaction: { type: String }
   },
   { timestamps: true, versionKey: false }
 )

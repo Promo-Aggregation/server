@@ -9,7 +9,7 @@
     "clean": "rm -rf dist",
     "compile": "npm run clean && tsc",
     "start": "node dist/bin/http.js",
-    "puppeteer": "npm install puppeteer --unsafe-perm=true --allow-root",
+    "puppeteer": "npm install puppeteer@1.10.0 --unsafe-perm=true --allow-root",
     "deploy": "npm run compile && pm2 start dist/bin/http.js --watch && pm2 start dist/bin/https.js --watch",
     "redeploy": "pm2 delete all && git pull origin development && npm run deploy"
   },

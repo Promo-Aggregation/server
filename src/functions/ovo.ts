@@ -124,13 +124,28 @@ export async function ovoFood() {
         const foo = await getGeneralData(page, 'food')
 
         const [generalData] = await Promise.all([Promise.all(foo)])
-        const bar = await getDetailData(page, generalData)
+        const detailData = await getDetailData(page, generalData)
+
+        const minTrans = detailData.map(d => {
+          const arrayMin = d.detail.syaratKetentuan
+            .filter(d2 => d2.match(/minimal/gi))
+            .join(' ')
+            .split(' ')
+          const indexRp = arrayMin.indexOf('Rp')
+          return { arrayMin, indexRp }
+        })
 
         for (let i = 0; i < generalData.length; i++) {
           data.push({
             ...generalData[i],
-            detail: bar[i].detail,
-            date: bar[i].date,
+            detail: detailData[i].detail,
+            date: detailData[i].date,
+            minimalTransaction:
+              minTrans[i].arrayMin.length > 1
+                ? minTrans[i].arrayMin[minTrans[i].indexRp] +
+                  ' ' +
+                  minTrans[i].arrayMin[minTrans[i].indexRp + 1]
+                : null,
             kodePromo: null
           })
         }
