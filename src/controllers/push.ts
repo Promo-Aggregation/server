@@ -6,8 +6,10 @@ export default class PushController {
   static async push(req: Request, res: Response, next: NextFunction) {
     try {
       const users: IUserModel[] = await User.find({}).select('device_token')
-      let arr: AxiosPromise[] = users.map((user: IUserModel) =>
-        axios({
+
+      let arr: AxiosPromise[] = users.map((user: IUserModel) => {
+        if (!user.device_token) return null
+        return axios({
           url: 'https://exp.host/--/api/v2/push/send',
           method: 'POST',
           data: {
@@ -20,7 +22,7 @@ export default class PushController {
             'content-type': 'application/json'
           }
         })
-      )
+      })
       console.log(arr)
       await Promise.all(arr)
       res.status(200).json({ message: 'Push sent' })
