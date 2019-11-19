@@ -54,20 +54,21 @@ export default class PushController {
           aP.tags.some((tag) => user.subscription.includes(tag))
         )
         const amountTrulyNewPromos = aggregatedPromos.length - newPromos.length
-        console.log(newPromos.length)
-        await axios({
-          url: 'https://exp.host/--/api/v2/push/send',
-          method: 'POST',
-          data: {
-            to: user.device_token,
-            body: `There are new ${amountTrulyNewPromos} recommended promos curated for you`,
-          },
-          headers: {
-            host: 'exp.host',
-            accept: 'application/json',
-            'content-type': 'application/json',
-          },
-        })
+        if (amountTrulyNewPromos > 0) {
+          await axios({
+            url: 'https://exp.host/--/api/v2/push/send',
+            method: 'POST',
+            data: {
+              to: user.device_token,
+              body: `There are new ${amountTrulyNewPromos} recommended promos curated for you`,
+            },
+            headers: {
+              host: 'exp.host',
+              accept: 'application/json',
+              'content-type': 'application/json',
+            },
+          })
+        }
       }
       res.status(200).json({ message: 'Magic Push sent' })
     } catch (e) {
