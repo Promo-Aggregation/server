@@ -30,15 +30,15 @@ export default class PushController {
       console.log(users)
       users.forEach((user: IUserModel) => {
         if (!user.device_token) return
-        arr.push({
-          to: user.device_token,
-          body: 'You have new promos'
-        })
+        arr.push(user.device_token)
       })
       await axios({
         url: 'https://exp.host/--/api/v2/push/send',
         method: 'POST',
-        data: arr,
+        data: {
+          to: arr,
+          body: 'You have new promos'
+        },
         headers: {
           host: 'exp.host',
           accept: 'application/json',
