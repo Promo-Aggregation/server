@@ -31,6 +31,7 @@ describe('Get Dana Food', function() {
           expect(el).to.have.property('tags')
           expect(el).to.have.property('detail')
           expect(el).to.have.property('minimalTransaction')
+          expect(el).to.have.property('cashback')
         })
         done()
       })

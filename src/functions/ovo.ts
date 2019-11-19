@@ -126,13 +126,25 @@ export async function ovoFood() {
         const [generalData] = await Promise.all([Promise.all(foo)])
         const detailData = await getDetailData(page, generalData)
 
-        const minTrans = detailData.map(d => {
+        const minTransAndCashback = detailData.map(d => {
+          let cashback: number
+          d.detail.syaratKetentuan.forEach((d2: string) => {
+            const cashbackResult = d2.match(/(cashback)\s?(\d+)/i)
+            if (cashbackResult) cashback = Number(cashbackResult[2])
+          })
+
           const arrayMin = d.detail.syaratKetentuan
-            .filter(d2 => d2.match(/minimal/gi))
+            .filter((d2: string) => {
+              if (d2.match(/minimal/gi) || d2.match(/minimum/gi)) return d2
+            })
             .join(' ')
             .split(' ')
-          const indexRp = arrayMin.indexOf('Rp')
-          return { arrayMin, indexRp }
+
+          let indexRp: number
+          if (arrayMin.length && arrayMin.indexOf('Rp') !== -1) indexRp = arrayMin.indexOf('Rp')
+          else indexRp = arrayMin.indexOf('Rp.')
+
+          return { arrayMin, cashback: cashback || null, indexRp }
         })
 
         for (let i = 0; i < generalData.length; i++) {
@@ -141,11 +153,14 @@ export async function ovoFood() {
             detail: detailData[i].detail,
             date: detailData[i].date,
             minimalTransaction:
-              minTrans[i].arrayMin.length > 1
-                ? minTrans[i].arrayMin[minTrans[i].indexRp] +
-                  ' ' +
-                  minTrans[i].arrayMin[minTrans[i].indexRp + 1]
+              minTransAndCashback[i].arrayMin.length > 1
+                ? Number(
+                    minTransAndCashback[i].arrayMin[minTransAndCashback[i].indexRp + 1]
+                      .split('.')
+                      .join('')
+                  )
                 : null,
+            cashback: minTransAndCashback[i].cashback,
             kodePromo: null
           })
         }
