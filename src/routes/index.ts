@@ -7,17 +7,21 @@ import { Request, Response, NextFunction } from 'express'
 import Redis from 'ioredis'
 import { danaFood, danaGame, danaEntertainment } from '../functions/dana'
 import { Promo } from '../models'
+import PushController from '../controllers/push'
 
 const redis = new Redis()
 
 const router = Router()
 
-router.get('/', (req: Request, res: Response) => res.status(200).json({ message: 'Server test ok!' }))
+router.get('/', (req: Request, res: Response) =>
+  res.status(200).json({ message: 'Server test ok!' })
+)
 
 router.use('/users', users)
 router.use('/fetch', fetch)
 router.use('/promos', promos)
 router.use('/subscriptions', subscribe)
+router.get('/push', PushController.push)
 
 router.get('/cache/clear', async (req: Request, res: Response, next: NextFunction) => {
   try {
