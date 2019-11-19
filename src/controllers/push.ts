@@ -37,7 +37,7 @@ export default class PushController {
         method: 'POST',
         data: {
           to: arr,
-          body: 'You have new promos'
+          body: 'New promos available!!'
         },
         headers: {
           host: 'exp.host',
