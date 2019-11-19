@@ -7,24 +7,44 @@ export default class PushController {
     try {
       const users: IUserModel[] = await User.find({}).select('device_token')
 
-      let arr: AxiosPromise[] = users.map((user: IUserModel) => {
-        if (!user.device_token) return null
-        return axios({
-          url: 'https://exp.host/--/api/v2/push/send',
-          method: 'POST',
-          data: {
-            to: user.device_token,
-            body: 'You have 1 new promo'
-          },
-          headers: {
-            host: 'exp.host',
-            accept: 'application/json',
-            'content-type': 'application/json'
-          }
+      // let arr: AxiosPromise[] = users.map((user: IUserModel) => {
+      //   if (!user.device_token) return null
+      //   return axios({
+      //     url: 'https://exp.host/--/api/v2/push/send',
+      //     method: 'POST',
+      //     data: {
+      //       to: user.device_token,
+      //       body: 'You have 1 new promo'
+      //     },
+      //     headers: {
+      //       host: 'exp.host',
+      //       accept: 'application/json',
+      //       'content-type': 'application/json'
+      //     }
+      //   })
+      // })
+
+      // console.log(arr)
+      // await Promise.all(arr)
+      let arr = []
+      console.log(users)
+      users.forEach((user: IUserModel) => {
+        if (!user.device_token) return
+        arr.push({
+          to: user.device_token,
+          body: 'You have new promos'
         })
       })
-      console.log(arr)
-      await Promise.all(arr)
+      await axios({
+        url: 'https://exp.host/--/api/v2/push/send',
+        method: 'POST',
+        data: arr,
+        headers: {
+          host: 'exp.host',
+          accept: 'application/json',
+          'content-type': 'application/json'
+        }
+      })
       res.status(200).json({ message: 'Push sent' })
     } catch (e) {
       next(e)
