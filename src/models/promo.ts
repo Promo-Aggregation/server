@@ -12,6 +12,7 @@ export interface IPromo {
     cara: string[]
   }
   minimalTransaction: string
+  cashback: number
 }
 
 export interface IPromoModel extends IPromo, Document {}
@@ -29,7 +30,8 @@ const promosSchema = new Schema(
       }
     ],
     detail: { syaratKetentuan: [], cara: [] },
-    minimalTransaction: { type: String }
+    minimalTransaction: { type: String },
+    cashback: { type: Number }
   },
   { timestamps: true, versionKey: false }
 )
