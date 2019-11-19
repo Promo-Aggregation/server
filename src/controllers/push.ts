@@ -23,7 +23,7 @@ export default class PushController {
       )
       console.log(arr)
       await Promise.all(arr)
-      res.status(200).json(users)
+      res.status(200).json({ message: 'Push sent' })
     } catch (e) {
       next(e)
     }
