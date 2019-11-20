@@ -23,6 +23,7 @@ router.use('/promos', promos)
 router.use('/subscriptions', subscribe)
 router.get('/push', PushController.push)
 router.get('/magic', PushController.magic)
+router.get('/magic-dummy', PushController.magicDummy)
 
 router.get('/cache/clear', async (req: Request, res: Response, next: NextFunction) => {
   try {
@@ -37,10 +38,10 @@ router.get('/seed/dana', async (req: Request, res: Response, next: NextFunction)
     const [foods, games, entertainments] = await Promise.all([
       danaFood(),
       danaGame(),
-      danaEntertainment()
+      danaEntertainment(),
     ])
     const [_foods, _games, _entertainments] = await Promise.all([
-      Promo.insertMany([...foods, ...games, ...entertainments])
+      Promo.insertMany([...foods, ...games, ...entertainments]),
     ])
     res.status(200).json([..._foods, ..._games, ..._entertainments])
   } catch (e) {
@@ -51,7 +52,7 @@ router.get('/seed/dana', async (req: Request, res: Response, next: NextFunction)
 router.get('/*', (req, res, next) =>
   next({
     status: 404,
-    message: 'Requested URI does not exist. Did you type the request correctly?'
+    message: 'Requested URI does not exist. Did you type the request correctly?',
   })
 )
 

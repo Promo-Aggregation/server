@@ -1,0 +1,766 @@
+[
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Hanya berlaku Sabtu & Minggu di semua outlet Maxx",
+        "Cashback hingga 10.000 OVO Points/transaksi dan hingga 20.000 OVO Points/bulan (1 OVO Point = Rp 1)",
+        "hanya berlaku untuk pembayaran dengan OVO.",
+        "Berlaku untuk semua Makanan & Minuman.",
+        "Periode Promo 2 - 30 November 2019."
+      ],
+      "cara": [
+        "Maksimalin momen weekendmu dengan pesan menu kesukaan atau coba yang baru di Maxx Coffee. Pake OVO Cashback 20% buat semua makanan & minuman, setiap Sabtu & Minggu selama periode promo."
+      ]
+    },
+    "tags": ["ovo", "food"],
+
+    "title": "Dummy - Maxx Out Your Weekend",
+    "imageUrl": "https://images-loyalty.ovo.id/public/deal/13/86/l/24794.jpg?ver=1",
+    "detailUrl": "https://www.ovo.id/deals/view/24794",
+    "date": "Berlaku Hingga 30 Nov 2019",
+    "minimalTransaction": null,
+    "cashback": null,
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:47.155Z",
+    "updatedAt": "2019-11-19T10:11:47.155Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Promo berlaku dari tanggal 08 – 21 November 2019.",
+        "Promo Discount 30% dengan maksimal Discount 50.000 + Cashback 30% dengan OVO.",
+        "Promo hanya berlaku di Dapur Cokelat Cikarang.",
+        "Setiap transaksi minimum Rp. 10.000 menggunakan OVO Cash, berhak mendapatkan Cashback 30% dalam bentuk OVO Points.",
+        "Maksimum cashback hingga 12.500 OVO Points/Transaksi dan 25.000 OVO Points/ID selama periode promo (1 OVO Points = Rp 1).",
+        "OVO berhak untuk membatalkan OVO Points yang telah diberikan apabila ditemukan kecurangan dalam pelaksanaan promo ini.",
+        "Jika terjadi kegagalan transaksi OVO karena alasan teknis apapun (baik EDC, jaringan koneksi atau aplikasi) maka kegagalan tersebut tidak akan menjadi tanggung jawab merchant. Konsumen wajib melakukan pelunasan pembayaran terhadap merchant ybs."
+      ],
+      "cara": [
+        "Ngemil yang bisa bikin happy? Ngemil coklat pastinya! Mulai dari snack, praline, cake, bahkan sampe minuman, semua yang serba coklat bisa kamu dapetin di Dapur Cokelat dengan Diskon 30% + Cashback 30% pake OVO!"
+      ]
+    },
+    "tags": ["ovo", "food"],
+
+    "title": "Dummy - All About Chocolate!",
+    "imageUrl": "https://images-loyalty.ovo.id/public/deal/23/86/l/24798.jpg?ver=1",
+    "detailUrl": "https://www.ovo.id/deals/view/24798",
+    "date": "Berlaku Hingga 21 Nov 2019",
+    "minimalTransaction": 10000,
+    "cashback": 30,
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:47.155Z",
+    "updatedAt": "2019-11-19T10:11:47.155Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Promo berlaku 08 November - 31 Desember 2019",
+        "Periode penukaran / Redeem Voucher 08 November - 31 Desember 2019",
+        "Khusus pembayaran menggunakan OVO CASH/POINT atau SPLIT",
+        "Voucher hanya berlaku untuk pembelian 2 Beef Bowl dan 1 Big Fried Chicken",
+        "Voucher yang sudah dibeli tidak dapat dikembalikan/ditukar/diuangkan  (Non-Refundable)",
+        "Customer harus menunjukkan kode voucher pada halaman \"My Vouchers\" pada aplikasi OVO kepada kasir ketika melakukan redeem"
+      ],
+      "cara": [
+        "Kalo ke Yoshinoya ajak sekalian temen kamu karena sekarang lagi ada paket Yummy Ber 3, yang isinya:\n- 2 Beef Bowl (Original/Yakiniku)\n- 1 Big Fried Chicken\n- 3 Ocha\n\nBisa kamu dapetin cuma Rp100.000 aja (normal Rp143.000)."
+      ]
+    },
+    "tags": ["ovo", "food"],
+
+    "title": "Dummy - Yummy Ber 3",
+    "imageUrl": "https://images-loyalty.ovo.id/public/deal/01/88/l/24878.jpg?ver=1",
+    "detailUrl": "https://www.ovo.id/deals/view/24878",
+    "date": "Berlaku Hingga 31 Dec 2019",
+    "minimalTransaction": null,
+    "cashback": null,
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:47.155Z",
+    "updatedAt": "2019-11-19T10:11:47.155Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Periode 1 Oktober – 31 Desember 2019",
+        "Berlaku untuk layanan hypermart online express",
+        "Maksimal discount 10% senilai Rp 20.000/transaki/pelanggan/hari",
+        "Tidak berlaku untuk produk susu anak dibawah 1 tahun, rokok dan minuman alkohol",
+        "Periode 1-31 Oktober 2019",
+        "Berlaku untuk layanan hypermart online express & reguler",
+        "Minimal transaksi Rp 100.000 dengan OVO Cash",
+        "Maksimal cashback 20% hingga 25.000 OVO points/transaksi/OVO ID dan hingga 50.000 OVO points/bulan/OVO ID",
+        "Tidak berlaku untuk produk susu anak dibawah 1 tahun, rokok dan minuman alkohol"
+      ],
+      "cara": [
+        "Belanja puas dapat DISKON 10% + Cashback 20% untuk berbagai kebutuhan harian dan bulanan kamu! Yuk, segera serbu Hypermart terdekat."
+      ]
+    },
+    "tags": ["ovo", "food"],
+
+    "title": "Dummy - Mau Diskon + Cashback? Ke Hypermart Aja!",
+    "imageUrl": "https://images-loyalty.ovo.id/public/deal/85/80/l/19590.jpg?ver=1",
+    "detailUrl": "https://www.ovo.id/deals/view/19590",
+    "date": "Berlaku Hingga 31 Dec 2019",
+    "minimalTransaction": 100000,
+    "cashback": 20,
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:47.155Z",
+    "updatedAt": "2019-11-19T10:11:47.155Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Periode promo 25 Oktober – 31 Desember 2019.",
+        "Khusus pembayaran menggunakan OVO.",
+        "Promo berlaku untuk semua transaksi (Dine-In, Takeaway, Delivery Order)",
+        "WAJIB menjadi member Bakmi GM terlebih dahulu dan menyebutkan nomor member saat bertransaksi.",
+        "Nomor member Bakmi GM yang terdaftar harus sama dengan nomor telepon yang terdaftar di akun OVO.",
+        "Pemenang dipilih berdasarkan nilai (rupiah) transaksi selama periode program berlangsung.",
+        "Pemenang wajib mengambil hadiah ditempat yang akan ditentukan oleh pihak Bakmi GM.",
+        "Pemenang berdasarkan data transaksi dari OVO dan keputusan tidak dapat diganggu gugat",
+        "Hadiah tidak dapat ditukar/diuangkan/dipindah tangankan.",
+        "Pajak ditanggung pemenang"
+      ],
+      "cara": [
+        "Kabar baik buat kamu yang ngefans menu-menu Bakmi GM. Yuk sering-sering makan Bakmi GM, bayar pake OVO, dan menangin hadiah total senilai puluhan juta buat top spender!\n\nHadiah Utama\nSamsung Galaxy Note 10\n\nHadiah Kedua (2 orang)\nMirrorless Camera\n\nHadiah Ketiga (3 orang)\nLaptop 14\"\n\nHadiah Keempat (4 orang)\nLED TV 32\"\n\nHadiah Kelima (60 orang)\n200.000 OVO Points\n\nHadiah Keenam (29 orang)\nVoucher Bakmi GM 100.000\n\nNantikan pengumuman pemenang 8 Januari 2020 oleh team Bakmi GM."
+      ]
+    },
+    "tags": ["ovo", "food"],
+
+    "title": "Dummy - Makan Kenyang, Banyak Menang!",
+    "imageUrl": "https://images-loyalty.ovo.id/public/deal/73/83/l/24675.jpg?ver=1",
+    "detailUrl": "https://www.ovo.id/deals/view/24675",
+    "date": "Berlaku Hingga 31 Dec 2019",
+    "minimalTransaction": null,
+    "cashback": null,
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:47.154Z",
+    "updatedAt": "2019-11-19T10:11:47.154Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Voucher berlaku dari tanggal 14 Oktober hingga 30 November 2019.",
+        "Voucher hanya akan didapatkan setelah user melakukan transaksi minimal Rp100.000 untuk produk fisik di Bukamall dan Super Seller, tidak berlaku untuk produk virtual (seperti: pulsa, listrik prabayar, paket data, dll.)",
+        "Untuk pengguna DANA Premium, voucher potongan 25ribu dapat digunakan untuk pembelian barang di BukaMall dan Super Seller di aplikasi Bukalapak terbaru.",
+        "Untuk pengguna DANA, Voucher DANA Potongan 25ribu hanya dapat digunakan untuk pembelian barang di BukaMall.",
+        "Voucher Rp25.000 akan otomatis memotong harga total produk yang akan dibeli.",
+        "Promo hanya berlaku 1 kali transaksi /minggu/ pengguna selama periode promo.",
+        "Promo hanya berlaku untuk 1 akun dan 1 device.",
+        "Voucher berlaku hanya untuk pembelian produk fisik dan tidak berlaku untuk produk digital (seperti pulsa, listrik prabayar, paket data, dll.)",
+        "Voucher hanya bisa digunakan untuk pembelian di BukaMall dan Super Seller.",
+        "Voucher tidak dapat digabungkan dengan promo lainnya.",
+        "Satu user ID dan satu device hanya bisa mendapatkan satu voucher setiap minggu selama periode promo berlangsung.",
+        "Voucher hanya berlaku untuk satu device dan satu user ID.",
+        "Voucher berlaku hanya untuk pembayaran menggunakan DANA di aplikasi Bukalapak terbaru (Versi Android : 4.47.2 ; IOS: 2.43.0).",
+        "Jika transaksi gagal, maka voucher tidak dapat dikembalikan/diuangkan",
+        "Voucher BUKALAPAK berlaku hingga 30 hari setelah voucher diterbitkan.",
+        "Voucher BUKALAPAK akan otomatis diterima di akun DANA pada menu “Pocket” dan hanya dapat digunakan dengan aplikasi Bukalapak.",
+        "Apabila user gagal mendapatkan promo, user dapat mengajukan keluhan maksimal 7 (tujuh) hari setelah transaksi dilakukan.",
+        "DANA berhak, tanpa pemberitahuan sebelumnya, melakukan tindakan-tindakan yang diperlukan apabila diduga adanya tindakan kecurangan atau penyalah gunaan dari pengguna.",
+        "DANA berhak meminta pengguna untuk melakukan peningkatan akun menjadi DANA Premium jika diperlukan untuk verifikasi data.",
+        "Syarat dan ketentuan dapat berubah sewaktu - waktu tanpa pemberitahuan sebelumnya."
+      ],
+      "cara": []
+    },
+    "tags": ["dana", "entertainment"],
+
+    "title": "Dummy - Belanja di Bukalapak Bonus Voucher Mingguan Rp25.000",
+    "date": "Hingga 30 Nov 2019",
+    "detailUrl": "https://dana.id/promo/detail/220/",
+    "imageUrl": "https://dana.id/uploads/promo/promo-1571042850GeneralCashback480x270pxl.png",
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:27.523Z",
+    "updatedAt": "2019-11-19T10:11:27.523Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Periode promo berlangsung selama 9 Okt – 29 Des 2019.   ",
+        "Maksimum Cashback 50% sebesar Rp5.000.  ",
+        "Promo berlaku untuk seluruh pengguna DANA ",
+        "Promo berlaku tanpa minimum transaksi.   ",
+        "Kuota promo berlaku maksimum 5 kali/minggu/merchant selama periode promo.",
+        "Promo berlaku 1x per hari.",
+        "Promo berlaku untuk 1 pengguna dengan 1 perangkat elektronik.   ",
+        "Promo berlaku dengan metode pembayaran menggunakan Saldo DANA maupun Kartu Kredit atau Kartu Debit yang sudah disimpan melalui fitur Simpan Kartu di aplikasi DANA.   ",
+        "Promo hanya berlaku diseluruh gerai JNE dan layanan kurir JNE. ",
+        "Cashback akan diterima maksimum 1 x 24 jam setelah transaksi berhasil melalui menu Riwayat pada aplikasi DANA.   ",
+        "Promo tetap berlaku bagi pengguna yang bertransaksi menggunakan voucher.   ",
+        "Apabila pengguna gagal mendapatkan promo, pengguna dapat mengajukan keluhan maksimal 7 hari setelah transaksi dilakukan.   ",
+        "DANA berhak, tanpa pemberitahuan sebelumnya, melakukan tindakan-tindakan yang diperlukan apabila diduga adanya tindakan kecurangan atau penyalahgunaan dari pengguna.    ",
+        "DANA berhak meminta kepada pengguna melakukan proses peningkatan menjadi akun DANA Premium jika diperlukan untuk tujuan verifikasi.  ",
+        "Syarat dan ketentuan dapat berubah sewaktu - waktu tanpa pemberitahuan sebelumnya.    "
+      ],
+      "cara": [
+        "Kunjungi Gerai JNE atau layanan kurir JNE. ",
+        "Masukan nomor telepon yang terdaftar di DANA. ",
+        "Tap Bayar/Pay pada halaman kasir aplikasi DANA. ",
+        "Cashback 50% akan otomatis didapatkan setelah transaksi berhasil. "
+      ]
+    },
+    "tags": ["dana", "entertainment"],
+
+    "title": "Dummy - DANA cashback 50% di JNE!",
+    "date": "Hingga 29 Des 2019",
+    "detailUrl": "https://dana.id/promo/detail/218/",
+    "imageUrl": "https://dana.id/uploads/promo/promo-1570589068jne-thumbnail.png",
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:27.523Z",
+    "updatedAt": "2019-11-19T10:11:27.523Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Tersedia bagi pengguna yang membeli kode Voucher Google Play di DANA mulai 1 November 2019 sampai 30 November 2019.",
+        "Berlaku hanya untuk item dalam game PUBG Mobile di Google Play",
+        "Item dalam game berlaku setelah pembayaran dilakukan. Tukarkan paling lambat 30 Desember 2019.",
+        "Hanya terbatas untuk 3 item bagi setiap pengguna.",
+        "Item dalam game PUBG Mobile berlaku setelah pembayaran dilakukan",
+        "Persyaratan lengkap : https://play.google.com/intl/ALL_id/about/card-terms/",
+        "Variasi Bonus Game Item:\n\n\n\nPUBG Mobile\n\n\nNo\nVoucher Google Play\nNama Paket\nItem Name\nQuantity\n\n\n1\nRp20.000 - Rp50.000\nErangle Package\nKepala Es Krim (15h)\n1\n\n\n2\nRp100.000 - Rp150.000\nMiramar Package\n\nKemeja Tropis Hawaii Merah (30h)\n\n1\n\n\nSendal Renang (30h)\n1\n\n\n3\nRp300.000\nSanhok Package\nSetelan Luau (30h)\n1\n\n\n \n \n \nMahkota Bunga Luau (30h)\n1\n\n\n \n \n \nKupon Klasik\n1\n\n\n4\nRp500.000\nVikendi Package\nSetelan Hoodie Merah (30h)\n1\n\n\nNutcracker - Panci (30h)\n1\n\n\nRansel Sirkus (30h)\n1\n\n\nKupon Klasik\n1\n\n\n\n",
+        "DANA berhak, tanpa pemberitahuan sebelumnya, melakukan tindakan-tindakan yang diperlukan apabila diduga adanya tindakan kecurangan atau penyalah gunaan dari pengguna. ",
+        "DANA berhak untuk meminta identitas KTP dan foto jika diperlukan untuk verifikasi. ",
+        "Syarat dan ketentuan dapat berubah sewaktu - waktu tanpa pemberitahuan sebelumnya."
+      ],
+      "cara": [
+        "Apabila user gagal mendapatkan promo, user dapat mengajukan keluhan maksimal 7 (tujuh) hari setelah transaksi dilakukan."
+      ]
+    },
+    "tags": ["dana", "game"],
+
+    "title": "Dummy - Beli Kode Voucher Google Play Pakai DANA, Gratis Item PUBG Mobile!",
+    "date": "Hingga 30 Nov 2019",
+    "detailUrl": "https://dana.id/promo/detail/247/",
+    "imageUrl": "https://dana.id/uploads/promo/promo-1572843180gpv_thumbnail.png",
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:27.522Z",
+    "updatedAt": "2019-11-19T10:11:27.522Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Periode promo adalah 25 Oktober 2019 sampai dengan 25 November 2019.",
+        "Setiap user yang top up diamond menggunakan dana akan mendapatkan kesempatan untuk memenangkan (1) satu Skin Legendary Mobile Legend Per hari.",
+        "Pemenang Legendary Skin Mobile Legend adalah pengguna yang melakukan top up terbanyak setiap harinya.",
+        "Setiap hari DANA membagikan (2) dua Legendary Skin Mobile Legend.",
+        "Skin dan item yang bisa di menangkan oleh user adalah:\n\nMiya Modena Butterfly\nGord Conqueror\nSaber Codename Storm\nAlucard Obsidian Blade\n\n",
+        "Miya Modena Butterfly",
+        "Gord Conqueror",
+        "Saber Codename Storm",
+        "Alucard Obsidian Blade",
+        "Hadiah yang diberikan ke pemenang akan di masukkan ke ID user Mobile Legend setiap hari Kamis – Sabtu",
+        "Untuk pemenang dari tanggal 25 Oktober– 30 Oktober akan diberikan pada tanggal 31 Oktober",
+        "Untuk pemenang dari tanggal 31 November – 6 November akan diberikan pada tanggal 7 November",
+        "Untuk pemenang dari tanggal 7 November – 13 November akan diberikan pada tanggal 14 November",
+        "Untuk pemenang dari tanggal 14 November – 20 November akan diberikan pada tanggal 21 November",
+        "Untuk pemenang dari tanggal 21 November -25 November akan diberikan pada tanggal 28 November",
+        "Akan dipilih (2) dua pemenang setiap harinya selama periode promo berlangsung.",
+        "Pemenang akan diumumkan di instagram story DANA @dana.id setiap harinya.",
+        "Top up Diamond selama periode event berlangsung menggunakan prosedur aplikasi DANA.",
+        "Transaksi harus berstatus berhasil/sukses pada periode promo.",
+        "Semua keputusan oleh DANA, dan Mobile Legends adalah final.",
+        "Dana id berhak menahan dan/atau membatalkan promo kepada pengguna sewaktu-waktu termasuk jika ditemukan tindak penyalahgunaan (abusive), kecurangan (fraudulent) dan/atau aktivitas mencurigakan lainnya di akun pengguna.",
+        "Syarat & ketentuan promo sewaktu-waktu dapat berubah."
+      ],
+      "cara": []
+    },
+    "tags": ["dana", "game"],
+
+    "title": "Dummy - Top Up Diamond, Menangin Legendary Skin!",
+    "date": "Hingga 25 Nov 2019",
+    "detailUrl": "https://dana.id/promo/detail/231/",
+    "imageUrl": "https://dana.id/uploads/promo/promo-157198403220191016_mobile-legend-legendary-skin_web-promo-banner-01.png",
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:27.522Z",
+    "updatedAt": "2019-11-19T10:11:27.522Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Buka Google Play Store",
+        "Klik banner \"Users' Choice Awards 2019\"",
+        "Klik \"Users' Choice App\"",
+        "Klik tombol \"Vote\" pada logo DANA.",
+        "Tulis review aplikasi DANA di Google Play Store dengan hashtag #GantiDompet dan cantumkan nama akun Instagram pribadi.",
+        "Periode kompetisi 19 – 25 Nov 2019.",
+        "Kompetisi ini berlaku bagi seluruh pengguna DANA.",
+        "Total hadiah untuk 2 orang pemenang adalah 2 unit JBL Flip.",
+        "Batas terakhir pemberian vote dan review aplikasi DANA adalah 25 Nov 2019.",
+        "Pemenang akan diumumkan pada 4 Des 2019 di IG Story DANA Indonesia.",
+        "Pemenang Kompetisi akan diumumkan melalui Instagram Story DANA (@dana.id) pada pukul 17.00 WIB.",
+        "Pemenang kompetisi akan dihubungi langsung oleh DANA melalui Direct Message (DM) Instagram DANA (@dana.id).",
+        "Pemenang akan langsung dihubungi melalui Direct Message (DM) Instagram DANA (@dana.id) dengan menyertakan data sebagai berikut:\n\nNama;\nponsel;\nAlamat e-mail;\nDomisili;\nSalinan KTP; dan\nDokumen/data lain yang dianggap perlu oleh DANA.\n\n",
+        "Nama;",
+        "ponsel;",
+        "Alamat e-mail;",
+        "Domisili;",
+        "Salinan KTP; dan",
+        "Dokumen/data lain yang dianggap perlu oleh DANA.",
+        "Hadiah bagi pemenang akan dikirimkan berdasarkan alamat domisili.",
+        "Hadiah akan dikirimkan selambat-lambatnya 30 hari kerja setelah pengumuman pemenang.",
+        "Berlaku ketentuan 1 akun Instagram dengan 1 identitas KTP bagi pemenang Kompetisi.",
+        "Kompetisi hanya berlaku untuk 1 pengguna dengan 1 perangkat elektronik.",
+        "Kompetisi hanya berlaku untuk Warga Negara Indonesia.",
+        "Untuk 1 akun hanya berkesempatan menjadi pemenang Kompetisi sebanyak 1 kali.",
+        "Pajak hadiah ditanggung sepenuhnya oleh DANA.",
+        "Pemenang tidak dapat memilih warna dan/atau tipe hadiah yang diberikan. Warna dan/atau tipe hadiah akan disesuaikan dengan ketersediaan barang.",
+        "Penentuan pemenang bedasarkan komentar yang dipilih oleh DANA yang ber-alamat di Gedung Capital Place, Lantai 18 Jalan Jenderal Gatot Subroto Kav 18 Jakarta Selatan (Kantor DANA).",
+        "Keputusan mengenai penentuan pemenang dan semua hal lain yang terkait dengan kompetisi adalah bersifat final dan tidak dapat diganggu gugat.",
+        "Dengan mengikuti kompetisi ini, pengguna dinyatakan telah membaca dan memahami, serta setuju untuk mematuhi dan menaati syarat dan ketentuan serta perubahan-perubahannya (jika ada).",
+        "Jika terdapat satu dan lain hal yang menurut pertimbangan DANA pemenang tidak mentaati syarat dan ketentuan yang telah ditentukan atau mengandung unsur pelanggaran hukum dan ketentuan yang berlaku maka DANA berhak meninjau kembali atau membatalkan secara sepihak hak dari pemenang untuk mendapatkan hadiah dan atas hal tersebut maka pemenang menerima dan tidak akan melakukan tuntutan dalam bentuk apapun",
+        "DANA memiliki hak untuk mengubah syarat dan ketentuan jika dianggap perlu. Segala perubahan dalam syarat dan ketentuan akan diberitahukan melalui Instagram Story DANA (@dana.id).",
+        "Hadiah tidak dapat dipindahtangankan atau diuangkan.",
+        "Kompetisi tidak berlaku untuk Karyawan DANA.",
+        "DANA berhak untuk meminta dokumen/identitas lainnya jika diperlukan untuk verifikasi.",
+        "Syarat dan ketentuan dapat berubah sewaktu – waktu tanpa pemberitahuan sebelumnya."
+      ],
+      "cara": []
+    },
+    "tags": ["dana", "entertainment"],
+
+    "title": "Dummy - Yuk, Vote DANA di Google Play Award dan Menangin Gadget Keren!",
+    "date": "Hingga 25 Nov 2019",
+    "detailUrl": "https://dana.id/promo/detail/262/",
+    "imageUrl": "https://dana.id/uploads/promo/promo-1574140544webbannerthumbnail_googleplayaward.png",
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:27.522Z",
+    "updatedAt": "2019-11-19T10:11:27.522Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Periode promo berlaku selama 15 Nov 2019 pkl. 08.00 WIB – 31 Des 2019 pkl. 23.59 WIB.",
+        "Pengundang harus mengajak teman yang BELUM memiliki akun DANA (Terundang) untuk mendaftar di aplikasi DANA, menjadi DANA Premium, dan melakukan Kirim Uang.",
+        "Setiap Pengundang dan Terundang akan mendapatkan Voucher DANA.",
+        "Setiap Pengundang dapat mengajak teman sebanyak-banyaknya untuk mendapatkan promo.",
+        "Voucher hanya berlaku untuk 1 pengguna dengan 1 perangkat elektronik.",
+        "Promo berlaku untuk semua pengguna DANA.",
+        "Voucher akan otomatis dikirimkan ke Pocket dan hanya dapat digunakan dengan aplikasi DANA.",
+        "DANA berhak, tanpa pemberitahuan sebelumnya, melakukan tindakan-tindakan yang diperlukan apabila diduga adanya tindakan kecurangan atau penyalah gunaan dari pengguna.",
+        "DANA berhak meminta pengguna untuk melakukan peningkatan akun menjadi DANA Premium jika diperlukan untuk verifikasi data.",
+        "Syarat dan ketentuan dapat berubah sewaktu - waktu tanpa pemberitahuan sebelumnya."
+      ],
+      "cara": [
+        "Pengundang harus mengirimkan kode referral atau Kirim Uang melalui chat atau SMS ke nomor handphone teman yang BELUM memiliki akun DANA (Terundang) untuk mendaftar di aplikasi DANA, menjadi DANA Premium dan melakukan Kirim Uang.",
+        "Pengundang akan mendapatkan 1 Voucher DANA setiap 1 Terundang mendaftar di aplikasi DANA, menjadi DANA Premium, dan melakukan Kirim Uang dengan Saldo DANA minimum Rp5.000.",
+        "Setiap Pengundang dapat mengajak teman sebanyak-banyaknya.",
+        "Pengundang akan mendapatkan Voucher DANA 100% maksimum Rp10.000.",
+        "Voucher hanya berlaku untuk transaksi F&B atau Produk Digital (Pulsa/Biller/Games) di Aplikasi DANA.",
+        "Voucher berlaku dengan minimum transaksi Rp10.000.",
+        "Voucher DANA dapat digunakan untuk transaksi Produk Digital (Pulsa, Biller, & Games) di aplikasi DANA atau di merchant DANA berikut: KFC, Solaria, Yoshinoya, Burger King, HokBen, Pizza Hut, Kopi Kenangan, Hop-Hop, Roti’O, CFC, Bakmi GM, Domino’s Pizza, Dcrepes, Ta Wan, Ichiban Sushi, Wingstop, Gulu Gulu, Shihlin Taiwan Street Snacks, Carl’s Junior, Puyo Desserts, Sour Sally, Auntie Anne's, Wendy’s, Gokana, Platinum, BMK, Fore Coffee, Kopi Kulo, Dairy Queen, Doner Kebab, Pepper Lunch, Pezzo Pizza, Rice-Bowl, Re.juve, Dapur Solo, Kamu Tea, Cuppa Coffee, Fiesta Steak, Mister Baso, Coffee Bean & Tea Leaf, ShuShu, Sate Khas Senayan, Texas Chicken, Baskin Robbins, Monami, Sugakiya, D’Cost, Halal Guys, Dynamic Bakery & Cake, Bariuma, Caribou Coffee, Krispy Kreme.",
+        "Voucher berlaku untuk transaksi menggunakan Saldo DANA, Kartu Debit, dan Kartu Kredit yang tersimpan melalui fitur Simpan Kartu, maupun BCA OneKlik.",
+        "Voucher berlaku hingga 14 hari setelah voucher diterbitkan.",
+        "Terundang harus mendaftar di aplikasi DANA, menjadi DANA Premium dan melakukan Kirim Uang dengan Saldo DANA minimum Rp5.000 untuk mendapatkan Voucher DANA.",
+        "Terundang akan mendapatkan 3 voucher sebagai berikut:\n\nSetelah mendaftar aplikasi DANA, Terundang akan mendapat 1 Voucher F&B Rp10.000 dengan minimum transaksi Rp10.000.\nSetelah menjadi DANA Premium, Terundang akan mendapat 1 Voucher Pulsa Rp5.000 tanpa minimum transaksi.\nSetelah melakukan Kirim Uang dengan Saldo DANA minimum Rp5.000, Terundang akan mendapat 1 Voucher DANA 50% maksimum Rp5.000.\n\n",
+        "Setelah mendaftar aplikasi DANA, Terundang akan mendapat 1 Voucher F&B Rp10.000 dengan minimum transaksi Rp10.000.",
+        "Setelah menjadi DANA Premium, Terundang akan mendapat 1 Voucher Pulsa Rp5.000 tanpa minimum transaksi.",
+        "Setelah melakukan Kirim Uang dengan Saldo DANA minimum Rp5.000, Terundang akan mendapat 1 Voucher DANA 50% maksimum Rp5.000.",
+        "Voucher DANA dapat digunakan untuk transaksi Produk Digital (Pulsa, Biller, & Games) di aplikasi DANA atau di merchant DANA berikut: KFC, Solaria, Yoshinoya, Burger King, HokBen, Pizza Hut, Kopi Kenangan, Hop-Hop, Roti’O, CFC, Bakmi GM, Domino’s Pizza, Dcrepes, Ta Wan, Ichiban Sushi, Wingstop, Gulu Gulu, Shihlin Taiwan Street Snacks, Carl’s Junior, Puyo Desserts, Sour Sally, Auntie Anne's, Wendy’s, Gokana, Platinum, BMK, Fore Coffee, Kopi Kulo, Dairy Queen, Doner Kebab, Pepper Lunch, Pezzo Pizza, Rice-Bowl, Re.juve, Dapur Solo, Kamu Tea, Cuppa Coffee, Fiesta Steak, Mister Baso, Coffee Bean & Tea Leaf, ShuShu, Sate Khas Senayan, Texas Chicken, Baskin Robbins, Monami, Sugakiya, D’Cost, Halal Guys, Dynamic Bakery & Cake, Bariuma, Caribou Coffee, Krispy Kreme.",
+        "Voucher berlaku untuk transaksi menggunakan Saldo DANA, Kartu Debit, dan Kartu Kredit yang tersimpan melalui fitur Simpan Kartu, maupun BCA OneKlik.",
+        "Setiap voucher berlaku hingga 7 hari setelah voucher diterbitkan."
+      ]
+    },
+    "tags": ["dana", "entertainment"],
+
+    "title": "Dummy - Ajak Teman Pakai DANA, AUTO JUTAWAN!",
+    "date": "Hingga 31 Des 2019",
+    "detailUrl": "https://dana.id/promo/detail/258/",
+    "imageUrl": "https://dana.id/uploads/promo/promo-1573727087referral_thumbnail.png",
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:27.522Z",
+    "updatedAt": "2019-11-19T10:11:27.522Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Periode Kompetisi Live Quiz “Auto Kaya” berlangsung setiap hari dimulai dari tangal 1 Nov 2019 sampai dengan tanggal 9 Feb 2020.",
+        "Kompetisi Live Quiz “Auto Kaya” hanya berlaku bagi seluruh pengguna aplikasi Toraccino.",
+        "Untuk berpartisipasi dalam kompetisi ini, peserta wajib:\n\nMemiliki 1 sachet kopi yang hanya bisa dipakai satu kali.\nDownload aplikasi Toraccino lalu hubungkan atau daftar akun DANA di aplikasi Torracino.  \n\n",
+        "Memiliki 1 sachet kopi yang hanya bisa dipakai satu kali.",
+        "Download aplikasi Toraccino lalu hubungkan atau daftar akun DANA di aplikasi Torracino.  ",
+        "Pada setiap hari nya, akan ada 2 sesi dari kompetisi Live Quiz “Auto Kaya”:\n\nSesi pertama dimulai pada Pukul 13.00 WIB\nSesi kedua dimulai pada Pukul 20.00 WIB\n\n",
+        "Sesi pertama dimulai pada Pukul 13.00 WIB",
+        "Sesi kedua dimulai pada Pukul 20.00 WIB",
+        "Satu sesi Live Quiz “Auto Kaya” berdurasi 10 menit dan terdiri dari 6 pertanyaan trivia yang harus dijawab dengan memilih 1 jawaban dari 4 pilihan jawaban yang tersedia.",
+        "Untuk memenangkan hadiah Saldo DANA, peserta diharuskan untuk menjawab dengan benar semua pertanyaan pada sesi Live Quiz “Auto Kaya” tersebut.",
+        "Hadiah Kompetisi Live Quiz “Auto Kaya” dengan rincian berupa:\n\nTotal saldo DANA senilai Rp50.000.000 yang akan dibagikan kepada para pemenang setiap hari sejak tanggal 1 Nov 2019 – 11 Nov 2019.\nTotal saldo DANA senilai Rp100.000.000 yang akan dibagikan kepada para pemenang setiap hari sejak tanggal 12 Nov 2019 – 9 Feb 2020.\n\n",
+        "Total saldo DANA senilai Rp50.000.000 yang akan dibagikan kepada para pemenang setiap hari sejak tanggal 1 Nov 2019 – 11 Nov 2019.",
+        "Total saldo DANA senilai Rp100.000.000 yang akan dibagikan kepada para pemenang setiap hari sejak tanggal 12 Nov 2019 – 9 Feb 2020.",
+        "Hadiah kompetisi berupa Saldo DANA yang berhasil didapatkan pemenang akan langsung diberikan melalui Akun DANA terdaftar, selambat-lambatnya 7 hari kerja setelah sesi berakhir.",
+        "Apabila hadiah belum berhasil diterima oleh pemenang, pihak DANA akan menghubungi pemenang sebanyak 3 kali. Apabila tidak ada jawaban dari pemenang, hadiah akan dianggap hangus.",
+        "Pemenang Kompetisi akan diumumkan secara langsung melalui Inbox dan Leaderboard dalam aplikasi Toraccino setelah sesi kuis berakhir selama periode kompetisi Live Quiz “Auto Kaya” berlangsung.",
+        "Promo hanya berlaku untuk 1 pengguna dengan 1 perangkat elektronik.",
+        "Berlaku ketentuan 1 akun DANA dengan 1 identitas KTP bagi pemenang Kompetisi.",
+        "Kompetisi hanya berlaku untuk Warga Negara Indonesia.",
+        "Untuk 1 akun hanya berkesempatan menjadi pemenang Kompetisi sebanyak 1 kali untuk masing-masing sesi Live Quiz “Auto Kaya”.",
+        "Penentuan pemenang berdasarkan peserta yang berhasil menjawab semua pertanyaan dengan benar.",
+        "Keputusan mengenai penentuan pemenang dan hal-hal lain yang terkait dengan kompetisi adalah mutlak kewenangan DANA yang bersifat final dan tidak dapat diganggu gugat.",
+        "Dengan mengikuti kompetisi ini, peserta dinyatakan telah membaca dan memahami, serta setuju untuk mematuhi dan menaati syarat dan ketentuan serta perubahan-perubahannya (jika ada).",
+        "Jika terdapat hal-hal yang menurut pertimbangan DANA, pemenang tidak mentaati syarat dan ketentuan yang telah ditentukan atau mengandung unsur pelanggaran hukum dan ketentuan yang berlaku, maka DANA berhak meninjau kembali atau membatalkan secara sepihak hak dari pemenang untuk mendapatkan hadiah.Atas hal tersebut peserta wajib menerima dan tidak akan melakukan tuntutan kepada DANA dalam bentuk apapun.",
+        "DANA berhak mengubah syarat dan ketentuan jika dianggap perlu.",
+        "Hadiah tidak dapat ditukarkan dalam bentuk selain yang disediakan oleh DANA, tidak dapat dipindahtangankan atau diuangkan.",
+        "DANA berhak meminta pengguna untuk melakukan peningkatan akun menjadi DANA Premium jika diperlukan untuk verifikasi data.",
+        "Syarat dan ketentuan dapat berubah sewaktu – waktu tanpa pemberitahuan sebelumnya."
+      ],
+      "cara": [
+        "Untuk informasi lebih lanjut kunjungi situs resmi Toraccino di www.toraccino.co.id"
+      ]
+    },
+    "tags": ["dana", "entertainment"],
+
+    "title": "Dummy - Ada 100 Juta Setiap Hari Tanpa Diundi!",
+    "date": "Hingga 09 Feb 2020",
+    "detailUrl": "https://dana.id/promo/detail/249/",
+    "imageUrl": "https://dana.id/uploads/promo/promo-1572921180toracinno_thumbnail.jpg",
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:27.522Z",
+    "updatedAt": "2019-11-19T10:11:27.522Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Periode promo berlangsung selama 8 - 11 Nov 2019.",
+        "Setiap pembelian Voucher Rp11 F&B, pengguna secara otomatis berkesempatan memenangkan hadiah:\n\nSamsung Note10+ untuk 15 pemenang dari pembelian voucher:\n\n",
+        "Samsung Note10+ untuk 15 pemenang dari pembelian voucher:",
+        "\n\n\n\nBurgreens Express (5 pemenang).\nPho Street Kitchen (5 pemenang).\nMama Tina (5 pemenang).\n\n\niPhone 11 untuk 15 pemenang dari pembelian voucher:\n\nHongkong Sheng Kee Kitchen (5 pemenang).\nBurgreens (5 pemenang).\nWalao-eh (5 pemenang).\n\n\nEmas 10 gram untuk 13 pemenang dari pembelian voucher:\n\nSenandung Alam (4 pemenang).\nPho Street (3 pemenang).\nTamani Plus (3 pemenang).\nTamani Café (3 pemenang).\n\n\nGOPRO Hero 7 White untuk 20 pemenang dari pembelian voucher:\n\nCe Wei (3 pemenang)\nHongkong Sheng Kee Dessert (3 pemenang)\nCRUNCHÄUS SALADS (3 pemenang)\nPezzo Pizza (3 pemenang)\nMammaMia (3 pemenang)\nNegiya Dining (2 pemenang)\nNegiya Express (2 pemenang)\nNegiya Donburi (1 pemenang).\n\n\niPad Mini untuk 8 pemenang dari pembelian voucher:\n\nCuppa Coffee (4 pemenang).\nMister Baso (4 pemenang).\n\n\nNintendo Switch untuk 8 pemenang dari pembelian voucher:\n\nThe Halal Guys (4 pemenang).\nBari-Uma Ramen (4 pemenang).\n\n\nApple AirPods untuk 10 pemenang dari pembelian voucher:\n\nTamani Express (2 pemenang).\nCaribou Coffee (2 pemenang).\nSapo Oriental (2 pemenang).\nSugakiya (2 pemenang).\nShuShu (2 pemenang).\n\n\nDWP 3-Day Pass Ticket untuk 5 pemenang dari pembelian voucher di Fore Coffee.\nJBL Flip untuk 13 pemenang dari pembelian voucher:\n\nRice Bowl (4 pemenang).\nDapur Solo (DS) (4 pemenang).\nCalifornia Fried Chicken (CFC) (5 pemenang).\n\n\nSamsung Galaxy Buds untuk 20 pemenang dari pembelian voucher:\n\nSolaria (4 pemenang).\nDairy Queen (4 pemenang).\nKedai Kopi Kulo (4 pemenang).\nWingstop (4 pemenang).\nCarl’s Jr. (4 pemenang).\n\n\nSaldo DANA untuk 25 pemenang masing-masing Rp250.000 dari pembelian voucher:\n\nTa Wan (5 pemenang)\nHop Hop (5 pemenang)\nIchiban Sushi (5 pemenang)\nDomino’s Pizza (5 pemenang)\nYoshinoya (5 pemenang).\n\n\n\n",
+        "\n\nBurgreens Express (5 pemenang).\nPho Street Kitchen (5 pemenang).\nMama Tina (5 pemenang).\n\n",
+        "Burgreens Express (5 pemenang).",
+        "Pho Street Kitchen (5 pemenang).",
+        "Mama Tina (5 pemenang).",
+        "iPhone 11 untuk 15 pemenang dari pembelian voucher:\n\nHongkong Sheng Kee Kitchen (5 pemenang).\nBurgreens (5 pemenang).\nWalao-eh (5 pemenang).\n\n",
+        "Hongkong Sheng Kee Kitchen (5 pemenang).",
+        "Burgreens (5 pemenang).",
+        "Walao-eh (5 pemenang).",
+        "Emas 10 gram untuk 13 pemenang dari pembelian voucher:\n\nSenandung Alam (4 pemenang).\nPho Street (3 pemenang).\nTamani Plus (3 pemenang).\nTamani Café (3 pemenang).\n\n",
+        "Senandung Alam (4 pemenang).",
+        "Pho Street (3 pemenang).",
+        "Tamani Plus (3 pemenang).",
+        "Tamani Café (3 pemenang).",
+        "GOPRO Hero 7 White untuk 20 pemenang dari pembelian voucher:\n\nCe Wei (3 pemenang)\nHongkong Sheng Kee Dessert (3 pemenang)\nCRUNCHÄUS SALADS (3 pemenang)\nPezzo Pizza (3 pemenang)\nMammaMia (3 pemenang)\nNegiya Dining (2 pemenang)\nNegiya Express (2 pemenang)\nNegiya Donburi (1 pemenang).\n\n",
+        "Ce Wei (3 pemenang)",
+        "Hongkong Sheng Kee Dessert (3 pemenang)",
+        "CRUNCHÄUS SALADS (3 pemenang)",
+        "Pezzo Pizza (3 pemenang)",
+        "MammaMia (3 pemenang)",
+        "Negiya Dining (2 pemenang)",
+        "Negiya Express (2 pemenang)",
+        "Negiya Donburi (1 pemenang).",
+        "iPad Mini untuk 8 pemenang dari pembelian voucher:\n\nCuppa Coffee (4 pemenang).\nMister Baso (4 pemenang).\n\n",
+        "Cuppa Coffee (4 pemenang).",
+        "Mister Baso (4 pemenang).",
+        "Nintendo Switch untuk 8 pemenang dari pembelian voucher:\n\nThe Halal Guys (4 pemenang).\nBari-Uma Ramen (4 pemenang).\n\n",
+        "The Halal Guys (4 pemenang).",
+        "Bari-Uma Ramen (4 pemenang).",
+        "Apple AirPods untuk 10 pemenang dari pembelian voucher:\n\nTamani Express (2 pemenang).\nCaribou Coffee (2 pemenang).\nSapo Oriental (2 pemenang).\nSugakiya (2 pemenang).\nShuShu (2 pemenang).\n\n",
+        "Tamani Express (2 pemenang).",
+        "Caribou Coffee (2 pemenang).",
+        "Sapo Oriental (2 pemenang).",
+        "Sugakiya (2 pemenang).",
+        "ShuShu (2 pemenang).",
+        "DWP 3-Day Pass Ticket untuk 5 pemenang dari pembelian voucher di Fore Coffee.",
+        "JBL Flip untuk 13 pemenang dari pembelian voucher:\n\nRice Bowl (4 pemenang).\nDapur Solo (DS) (4 pemenang).\nCalifornia Fried Chicken (CFC) (5 pemenang).\n\n",
+        "Rice Bowl (4 pemenang).",
+        "Dapur Solo (DS) (4 pemenang).",
+        "California Fried Chicken (CFC) (5 pemenang).",
+        "Samsung Galaxy Buds untuk 20 pemenang dari pembelian voucher:\n\nSolaria (4 pemenang).\nDairy Queen (4 pemenang).\nKedai Kopi Kulo (4 pemenang).\nWingstop (4 pemenang).\nCarl’s Jr. (4 pemenang).\n\n",
+        "Solaria (4 pemenang).",
+        "Dairy Queen (4 pemenang).",
+        "Kedai Kopi Kulo (4 pemenang).",
+        "Wingstop (4 pemenang).",
+        "Carl’s Jr. (4 pemenang).",
+        "Saldo DANA untuk 25 pemenang masing-masing Rp250.000 dari pembelian voucher:\n\nTa Wan (5 pemenang)\nHop Hop (5 pemenang)\nIchiban Sushi (5 pemenang)\nDomino’s Pizza (5 pemenang)\nYoshinoya (5 pemenang).\n\n",
+        "Ta Wan (5 pemenang)",
+        "Hop Hop (5 pemenang)",
+        "Ichiban Sushi (5 pemenang)",
+        "Domino’s Pizza (5 pemenang)",
+        "Yoshinoya (5 pemenang).",
+        "Setiap pengguna hanya dapat memenangkan 1 hadiah selama periode promo.",
+        "Promo berlaku untuk 1 pengguna dengan 1 perangkat elektronik.",
+        "Pemenang akan mendapatkan hadiah berdasarkan ketersediaan warna & tipe hadiah.",
+        "Proses penentuan pemenang dilakukan di kantor DANA pada tanggal 19 Nov 2019 (Gd. Capital Place Office Tower Lt. 18, Jl. Jend. Gatot Subroto Kav. 18, Kel. Kuningan Barat, Kec. Mampang Prapatan, Kota Administrasi Jakarta Selatan 12710) bersama dengan pihak Dinas Sosial.",
+        "Pemenang akan diumumkan melalui fitur IG Story @dana.id pada 21 Nov 2019 pukul 20.00 WIB.",
+        "Pemenang akan langsung diinformasikan oleh tim DANA melalui SMS.",
+        "Apabila pemenang tidak memberikan jawaban dalam rentang 30 hari kerja sejak diinformasikan oleh pihak DANA, pemenang dianggap gugur.",
+        "Pajak hadiah ditanggung sepenuhnya oleh pemenang.",
+        "Bagi pemenang berdomisili di Jabodetabek, pengambilan hadiah harus dilakukan di kantor DANA (Gd. Capital Place Office Tower Lt. 18, Jl. Jend. Gatot Subroto Kav. 18, Kel. Kuningan Barat, Kec. Mampang Prapatan, Kota Administrasi Jakarta Selatan 12710). Jika  pemenang berada di luar Jabodetabek, hadiah akan dikirimkan dengan kurir dari pihak ketiga dengan ongkos kirim ditanggung oleh DANA. Estimasi pengiriman hadiah dilakukan dalam rentang waktu maksimal 30 hari kerja.",
+        "Bagi pemenang di wilayah Jabodetabek, wajib menyertakan identitas diri saat pengambilan hadiah di kantor DANA. Bagi pemenang di luar wilayah Jabodetabek, wajib memberikan identitas diri melalui fitur Direct Message (DM) Instagram sebagai syarat pengiriman hadiah ke alamat pemenang.",
+        "Keputusan DANA mengenai penentuan pemenang dan semua hal lain yang terkait dengan Kompetisi adalah bersifat final dan tidak dapat diganggu gugat.",
+        "Jika ada salah satu persyaratan Kompetisi yang tidak terpenuhi atau melanggar hukum maka DANA dapat secara sepihak membatalkan pemenang dan menyatakan pemenang gugur serta tidak berhak atas hadiah.",
+        "DANA memiliki hak untuk mengubah ketentuan jika dianggap perlu tanpa pemberitahuan sebelumnya.",
+        "DANA berhak untuk meminta identitas KTP dan foto diri pengguna DANA jika diperlukan untuk verifikasi.",
+        "Dengan mengikuti kompetisi ini, pengguna dinyatakan telah membaca dan memahami, serta setuju untuk mematuhi dan menaati syarat dan ketentuan serta perubahan-perubahannya (jika ada).",
+        "Syarat dan ketentuan ini dapat berubah sewaktu - waktu tanpa pemberitahuan sebelumnya."
+      ],
+      "cara": []
+    },
+    "tags": ["dana", "entertainment"],
+
+    "title": "Dummy - Kejutan Hadiah #Puas11Rupiah",
+    "date": "Hingga 30 Nov 2019",
+    "detailUrl": "https://dana.id/promo/detail/239/",
+    "imageUrl": "https://dana.id/uploads/promo/promo-15728502291111PRIZEDISTRIBUTION_WEBSITETHUMBNAIL_480X270.png",
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:27.522Z",
+    "updatedAt": "2019-11-19T10:11:27.522Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Periode promo berlangsung selama 25 Okt – 31 Des 2109, pukul 13:00 hingga 23:59 WIB.",
+        "Promo hanya berlaku untuk pembayaran yang menggunakan Saldo DANA dan Kartu Debit yang sudah disimpan melalui fitur Simpan Kartu di aplikasi DANA.",
+        "DANA Bisnis Reward berupa cashback maksimum sebesar Rp10.000.",
+        "Promo berlaku dengan minimum transaksi Rp15.000.",
+        "Promo berlaku untuk 1 kali transaksi/pengguna/merchant.",
+        "Kuota promo maksimum 1 kali transaksi/bulan.",
+        "Promo hanya berlaku untuk 1 pengguna dengan 1 perangkat elektronik.",
+        "Promo berlaku untuk seluruh merchant DANA Bisnis.",
+        "Cashback akan dikirimkan ke saldo DANA maksimum 1 x 24 jam setelah transaksi berhasil.",
+        "Pembayaran harus menggunakan kode QR atau melalui link yang dibagikan yang terdapat pada merchant DANA Bisnis melalui aplikasi DANA.",
+        "DANA Bisnis Reward akan didapatkan selama kuota promo masih berlaku.",
+        "DANA berhak, tanpa pemberitahuan sebelumnya, melakukan tindakan-tindakan yang diperlukan apabila diduga adanya tindakan kecurangan atau penyalah gunaan dari pengguna.",
+        "DANA berhak meminta pengguna melakukan proses peningkatan akun menjadi akun premium jika diperlukan untuk verifikasi.",
+        "Syarat dan ketentuan dapat berubah sewaktu - waktu tanpa pemberitahuan sebelumnya."
+      ],
+      "cara": []
+    },
+    "tags": ["dana", "entertainment"],
+
+    "title": "Dummy - WOW! Ada Bonus Bulanan Buat Merchant DANA Bisnis!",
+    "date": "Hingga 31 Des 2019",
+    "detailUrl": "https://dana.id/promo/detail/230/",
+    "imageUrl": "https://dana.id/uploads/promo/promo-1571980241thumbnail_kyb.png",
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:27.522Z",
+    "updatedAt": "2019-11-19T10:11:27.522Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Periode Kompetisi “Menangin Gadget Keren + Saldo DANA” berlangsung selama 16 Okt - 27 Des 2019.",
+        "Kompetisi “Menangin Gadget Keren + Saldo DANA” hanya berlaku di Channel Youtube DANA Indonesia.",
+        "Kompetisi berlaku bagi seluruh subscriber akun Youtube DANA Indonesia.",
+        "Total hadiah Kompetisi “Menangin Gadget Keren + Saldo DANA” untuk 53 orang pemenang yang berlaku di dalam video Pertolongan PerDANA Paling Kekinian dengan rincian berupa: ",
+        "3 unit laptop ASUS ROG Strix Scar 2 saat mencapai 600.000 subscribers.",
+        "5 unit Samsung Galaxy Note 10 256GB saat mencapai 450.000 subscribers.",
+        "10 unit Emas Antam 10 Gram saat mencapai 375.000 subscribers.",
+        "15 unit Samsung Galaxy Watch Active saat mencapai 300.000 subscribers.",
+        "20 unit JBL Flip saat mencapai 250.000 subscribers.",
+        "Total hadiah Kompetisi “Menangin Gadget Keren + Saldo DANA” untuk 100 orang pemenang yang berlaku di dalam video DANA Dalam Berita dengan rincian berupa:\n\nSaldo DANA masing-masing senilai Rp50.000 untuk 20 orang pemenang yang dibagikan setiap minggu.\n\n",
+        "Saldo DANA masing-masing senilai Rp50.000 untuk 20 orang pemenang yang dibagikan setiap minggu.",
+        "Untuk berpartisipasi dalam kompetisi ini, pengguna wajib: \n\nSubscribe Channel Youtube DANA Indonesia.\nMenulis komentar berdasarkan tema pada setiap content video di kolom komentar beserta dengan akun Instagram pribadi.\n\n",
+        "Subscribe Channel Youtube DANA Indonesia.",
+        "Menulis komentar berdasarkan tema pada setiap content video di kolom komentar beserta dengan akun Instagram pribadi.",
+        "Batas terakhir pemberian komentar adalah 7 (tujuh) hari setelah video tersebut diunggah di channel Youtube DANA, pada pukul 18.00 WIB.",
+        "Pemenang akan diumumkan 14 hari setelah video diunggah di channel Youtube DANA Indonesia.",
+        "Hadiah akan diberikan selambat-lambatnya 14 hari kerja setelah pengumuman pemenang.",
+        "Pemenang Kompetisi akan diumumkan melalui Community Page (Halaman Komunitas) akun Youtube DANA Indonesia dan juga di Instagram Story DANA (@dana.id) pada pukul 17.00 WIB selama periode kompetisi “Menangin Gadget Keren + Saldo DANA” berlangsung.",
+        "Pemenang kompetisi akan dihubungi langsung oleh DANA dengan me-reply/membalas masing-masing komentar di dalam video yang diberikan, serta melalui fitur Direct Message (DM) Instagram DANA (@dana.id).",
+        "Berlaku ketentuan 1 akun Youtube dengan 1 identitas KTP bagi pemenang Kompetisi.",
+        "Kompetisi hanya berlaku untuk Warga Negara Indonesia.",
+        "Untuk 1 (satu) akun subscriber hanya berkesempatan menjadi pemenang Kompetisi sebanyak 1 (satu) kali untuk masing-masing jenis video.",
+        "Pajak hadiah ditanggung sepenuhnya oleh pemenang.",
+        "Pemenang tidak dapat memilih warna dan/atau tipe hadiah yang diberikan. Warna dan/atau tipe hadiah akan disesuaikan dengan ketersediaan barang.",
+        "Penentuan pemenang bedasarkan komentar subscriber yang dipilih oleh DANA yang ber-alamat di Gedung Capital Place, Lantai 18 Jalan Jenderal Gatot Subroto Kav 18 Jakarta Selatan (Kantor DANA).",
+        "Keputusan mengenai penentuan pemenang dan semua hal lain yang terkait dengan kompetisi adalah bersifat final dan tidak dapat diganggu gugat.",
+        "Pemenang kompetisi “Menangin Gadget Keren + Saldo DANA” yang berdomisili di JABODETABEK wajib menyertakan identitas diri (KTP asli) pada saat pengambilan hadiah.",
+        "Dengan mengikuti kompetisi ini, pengguna dinyatakan telah membaca dan memahami, serta setuju untuk mematuhi dan menaati syarat dan ketentuan serta perubahan-perubahannya (jika ada).",
+        "Jika terdapat satu dan lain hal yang menurut pertimbangan DANA pemenang tidak mentaati syarat dan ketentuan yang telah ditentukan atau mengandung unsur pelanggaran hukum dan ketentuan yang berlaku maka DANA berhak meninjau kembali atau membatalkan secara sepihak hak dari pemenang untuk mendapatkan hadiah dan atas hal tersebut maka pemenang menerima dan tidak akan melakukan tuntutan dalam bentuk apapun",
+        "DANA memiliki hak untuk mengubah syarat dan ketentuan jika dianggap perlu. Segala perubahan dalam syarat dan ketentuan akan diberitahukan melalui Community Page akun Youtube (DANA Indonesia) dan juga Instagram Story DANA (@dana.id).",
+        "Hadiah tidak dapat dipindahtangankan atau diuangkan.",
+        "Kompetisi tidak berlaku untuk Karyawan DANA.",
+        "DANA berhak untuk meminta dokumen/identitas lainnya jika diperlukan untuk verifikasi.",
+        "Syarat dan ketentuan dapat berubah sewaktu – waktu tanpa pemberitahuan sebelumnya."
+      ],
+      "cara": [
+        "Pemenang akan langsung dihubungi melalui fitur Direct Message (DM) Instagram DANA (@dana.id) dengan menyertakan data sebagai berikut:\n\nnama;\nponsel;\nalamat e-mail;\ndomisili;\nsalinan KTP; dan\ndokumen/data lain yang dianggap perlu oleh DANA.\n\n",
+        "nama;",
+        "ponsel;",
+        "alamat e-mail;",
+        "domisili;",
+        "salinan KTP; dan",
+        "dokumen/data lain yang dianggap perlu oleh DANA.",
+        "Hadiah bagi pemenang yang berdomisili di JABODETABEK, harus menyertakan identitas diri (KTP asli) saat pengambilan hadiah.",
+        "Hadiah bagi pemenang yang berdomisili di LUAR JABODETABEK, akan dikirimkan berdasarkan alamat domisili.",
+        "Proses pengambilan hadiah dilakukan dengan mengambil langsung di Kantor DANA, dengan biaya akomodasi menuju Kantor DANA ditanggung sendiri oleh masing-masing pemenang. Proses pengambilan hadiah DAPAT DIWAKILKAN.",
+        "Proses pengambilan hadiah dilakukan 7 (tujuh) hari kerja setelah pemenang kompetisi diumumkan, pada pukul 10.00 WIB -15.00 WIB."
+      ]
+    },
+    "tags": ["dana", "entertainment"],
+
+    "title": "Dummy - Menangin Gadget Keren, Subscribe dan Komen di Youtube DANA!",
+    "date": "Hingga 27 Des 2019",
+    "detailUrl": "https://dana.id/promo/detail/224/",
+    "imageUrl": "https://dana.id/uploads/promo/promo-1571643619youtube-activation-web-banner-2.png",
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:27.522Z",
+    "updatedAt": "2019-11-19T10:11:27.522Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Periode promo berlaku selama 14 Okt 2019 pukul 17.00 – 30 Nov 2019 pukul 23.59.",
+        "Voucher yang akan didapat adalah Voucher Diskon 50% Carl’s Jr/Wingstop/Caribou maksimal potongan Rp25.000.",
+        "Khusus untuk pemesanan tiket di CGV, pembayaran hanya dapat menggunakan Saldo DANA.",
+        "Voucher Diskon 50% Carl’s Jr/Wingstop/Caribou didapatkan oleh pengguna TIX ID yang melakukan transaksi pembelian tiket minimum Rp50.000 di Cinema XXI dan CGV area Jabodetabek, Surabaya, dan Bandung.",
+        "Voucher Diskon 50% Carl’s Jr/Wingstop/Caribou hanya bisa didapatkan 1 kali setiap bulan.",
+        "Promo berlaku untuk 1 pengguna dengan 1 perangkat elektronik.",
+        "Voucher dapat ditukarkan di gerai Carl’s Jr/Wingstop/Caribou dengan minimum transaksi Rp50.000.",
+        "Voucher yang sudah ditukarkan di salah satu gerai antara Carl’s Jr/Wingstop/Caribou, maka voucher tidak dapat digunakan kembali.",
+        "Voucher tidak dapat digabungkan dengan promo voucher lainnya.",
+        "Voucher berlaku selama 14 hari setelah voucher diterbitkan.",
+        "Voucher Diskon 50% Carl’s Jr/Wingstop/Caribou maksimal Rp25.000 akan otomatis dikirimkan ke Pocket",
+        "Promo hanya berlaku untuk 50.000 transaksi pertama.",
+        "Pembayaran dapat menggunakan Saldo DANA/Kartu Debit/Kartu Kredit/BCA OneKlik yang sudah didaftarkan di dalam akun DANA.",
+        "Apabila tidak mendapatkan promo, pengguna dapat mengajukan keluhan maksimal 7 hari setelah transaksi dilakukan.",
+        "Voucher tidak dapat diperjualbelikan. Kegiatan jual beli voucher DANA merupakan kegiatan yang dilarang dan dapat dikenakan sanksi oleh DANA.",
+        "DANA berhak, tanpa pemberitahuan sebelumnya, melakukan tindakan-tindakan yang diperlukan apabila diduga adanya tindakan kecurangan atau penyalah gunaan dari pengguna.",
+        "DANA berhak meminta kepada pengguna melakukan proses peningkatan menjadi akun Premium jika diperlukan untuk tujuan verifikasi.",
+        "Syarat dan ketentuan dapat berubah sewaktu - waktu tanpa pemberitahuan sebelumnya."
+      ],
+      "cara": [
+        "Buka aplikasi TIX ID, pilih film, lokasi (khusus studio di Cinema XXI dan CGV wilayah Jabodetabek, Surabaya, dan Bandung), jam tayang & tempat duduk yang kamu inginkan.",
+        "Lanjutkan ke halaman Ringkasan Order, pastikan semua informasi nonton sudah benar & minimum transaksi Rp50.000.",
+        "Pilih metode pembayaran yang dapat dilakukan dengan Saldo DANA, Kartu Debit, Kartu Kredit, atau BCA OneKlik yang sudah tersimpan di aplikasi DANA.",
+        "Voucher Diskon 50% Carl’s Jr/Wingstop/Caribou maks. Rp25.000 akan akan dikirimkan secara otomatis ke Pocket DANA.",
+        "Voucher dapat digunakan untuk pembelian di merchant Carl’s Jr/Wingstop/Caribou terdekat dengan min. transaksi Rp50.000.",
+        "Jika voucher tidak ditemukan pada Pocket DANA, berarti kuota promo sudah habis dan waktu promo telah selesai."
+      ]
+    },
+    "tags": ["dana", "entertainment"],
+
+    "title": "Dummy - Nonton Bikin Kenyang dapat Bonus Voucher 50%!",
+    "date": "Hingga 30 Nov 2019",
+    "detailUrl": "https://dana.id/promo/detail/221/",
+    "imageUrl": "https://dana.id/uploads/promo/promo-1571287872mahadya-thumbnail-2.png",
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:27.522Z",
+    "updatedAt": "2019-11-19T10:11:27.522Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Periode promo berlangsung selama 9 Sep – 8 Des 2019.  ",
+        "Maksimum Cashback 25% sebesar Rp2.500/transaksi bagi pengguna akun DANA Premium.  ",
+        "Maksimum Cashback 25% sebesar Rp1.500/transaksi bagi pengguna Akun DANA. ",
+        "Promo berlaku tanpa minimum transaksi. ",
+        "Akun DANA Premium adalah pengguna DANA yang sudah verifikasi data diri melalui 3 langkah mudah & dapat menggunakan semua fitur aplikasi DANA. ",
+        "Akun DANA adalah pengguna DANA yang belum melakukan verifikasi data diri di aplikasi DANA. ",
+        "Promo hanya berlaku 1 kali transaksi/pengguna/hari. ",
+        "Promo hanya berlaku untuk 1 pengguna dengan 1 perangkat elektronik.",
+        "Cashback akan diterima maksimum 1 x 24 jam setelah transaksi berhasil. ",
+        "Pembayaran harus menggunakan kode QR DANA pada Mesin Scan DANA yang terdapat di kasir. ",
+        "DANA berhak, tanpa pemberitahuan sebelumnya, melakukan tindakan-tindakan yang diperlukan apabila diduga adanya tindakan kecurangan atau penyalah gunaan dari pengguna. ",
+        "DANA berhak untuk meminta identitas KTP dan foto jika diperlukan untuk verifikasi. ",
+        "Syarat dan ketentuan dapat berubah sewaktu - waktu tanpa pemberitahuan sebelumnya. "
+      ],
+      "cara": [
+        "Pilih produk di Jumpstart Coffee.",
+        "Pilih DANA sebagai metode pembayaran.",
+        "Tap Bayar/Pay pada halaman utama aplikasi DANA dan arahkan pada kode QR yang muncul di mesin Jumpstart Coffee.",
+        "Cashback 25% akan otomatis didapatkan setelah transaksi berhasil."
+      ]
+    },
+    "tags": ["dana", "food"],
+
+    "title": "Dummy - DANA Cashback Hingga 25% di JumpStart",
+    "date": "Hingga 08 Des 2019",
+    "detailUrl": "https://dana.id/promo/detail/199/",
+    "imageUrl": "https://dana.id/uploads/promo/promo-1569470837jumpstart-thumbnail.png",
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:27.521Z",
+    "updatedAt": "2019-11-19T10:11:27.521Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Periode promo berlangsung selama 16 Sep – 29 Mar 2020. ",
+        "Voucher Diskon Classified 20% didapatkan setelah pengguna melakukan minimum transaksi Rp100.000.",
+        "Maksimum diskon 20% sebesar Rp50.000/transaksi berlaku untuk seluruh pengguna DANA.  ",
+        "Promo hanya berlaku untuk 1 kali transaksi/pengguna/merchant/bulan. ",
+        "Promo hanya berlaku untuk 1 pengguna dengan 1 perangkat elektronik.  ",
+        "Pembayaran harus menggunakan kode QR DANA pada Mesin Scan DANA yang terdapat di kasir. ",
+        "DANA berhak, tanpa pemberitahuan sebelumnya, melakukan tindakan-tindakan yang diperlukan apabila diduga adanya tindakan kecurangan atau penyalah gunaan dari pengguna. ",
+        "DANA berhak meminta pengguna untuk melakukan peningkatan akun menjadi DANA Premium jika diperlukan untuk verifikasi data.",
+        "Syarat dan ketentuan dapat berubah sewaktu - waktu tanpa pemberitahuan sebelumnya. "
+      ],
+      "cara": [
+        "Kunjungi Outlet Classified. ",
+        "Tap Bayar/Pay pada halaman utama aplikasi DANA dan arahkan kode QR pada Mesin Scan DANA di kasir. ",
+        "Voucher Diskon Classified 20% akan otomatis masuk ke Pocket DANA.",
+        "Voucher Diskon dapat digunakan untuk transaksi berikutnya di Classified bagi seluruh pengguna DANA "
+      ]
+    },
+    "tags": ["dana", "food"],
+
+    "title": "Dummy - Bonus Voucher Classified hingga Rp50rb",
+    "date": "Hingga 29 Mar 2020",
+    "detailUrl": "https://dana.id/promo/detail/194/",
+    "imageUrl": "https://dana.id/uploads/promo/promo-1568605777CLASSIFIED-THUMBNAIL.png",
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:27.521Z",
+    "updatedAt": "2019-11-19T10:11:27.521Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Periode promo berlangsung selama 16 Sep – 29 Mar 2020. ",
+        "Voucher Diskon Fook Yew 20% didapatkan setelah pengguna melakukan minimum transaksi Rp100.000.",
+        "Maksimum diskon 20% sebesar Rp50.000/transaksi berlaku untuk seluruh pengguna DANA.  ",
+        "Promo hanya berlaku untuk 1 kali transaksi/pengguna/merchant/bulan. ",
+        "Promo hanya berlaku untuk 1 pengguna dengan 1 perangkat elektronik.  ",
+        "Pembayaran harus menggunakan kode QR DANA pada Mesin Scan DANA yang terdapat di kasir. ",
+        "DANA berhak, tanpa pemberitahuan sebelumnya, melakukan tindakan-tindakan yang diperlukan apabila diduga adanya tindakan kecurangan atau penyalah gunaan dari pengguna. ",
+        "DANA berhak meminta pengguna untuk melakukan peningkatan akun menjadi DANA Premium jika diperlukan untuk verifikasi data.",
+        "Syarat dan ketentuan dapat berubah sewaktu - waktu tanpa pemberitahuan sebelumnya. "
+      ],
+      "cara": [
+        "Kunjungi Outlet Fook Yew. ",
+        "Tap Bayar/Pay pada halaman utama aplikasi DANA dan arahkan kode QR pada Mesin Scan DANA di kasir. ",
+        "Voucher Diskon Fook Yew 20% akan otomatis masuk ke Pocket DANA.",
+        "Voucher Diskon dapat digunakan untuk transaksi berikutnya di Fook Yew bagi seluruh pengguna DANA "
+      ]
+    },
+    "tags": ["dana", "food"],
+
+    "title": "Dummy - Bonus Voucher Fook Yew hingga Rp50rb",
+    "date": "Hingga 29 Mar 2020",
+    "detailUrl": "https://dana.id/promo/detail/193/",
+    "imageUrl": "https://dana.id/uploads/promo/promo-1568605580FOOK-YEW-THUMBNAIL.png",
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:27.521Z",
+    "updatedAt": "2019-11-19T10:11:27.521Z"
+  },
+  {
+    "detail": {
+      "syaratKetentuan": [
+        "Periode promo berlangsung selama 30 Sep – 29 Des 2019. ",
+        "Maksimum Cashback 20% sebesar Rp10.000/transaksi untuk akun DANA Premium. ",
+        "Maksimum Cashback 20% sebesar Rp5.000 /transaksi  untuk akun DANA.",
+        "Promo berlaku tanpa minimum transaksi. ",
+        "Promo hanya berlaku di Merchant MOKA. ",
+        "Promo berlaku 1 kali/merchant/minggu. ",
+        "Promo hanya berlaku untuk 1 akun dengan 1 perangkat elektronik.",
+        "Akun DANA Premium adalah pengguna DANA yang sudah verifikasi data diri melalui 3 langkah mudah & dapat menggunakan semua fitur aplikasi DANA.",
+        "Akun DANA adalah pengguna DANA yang belum melakukan verifikasi data diri di aplikasi DANA. ",
+        "Cashback akan diterima maksimum 1 x 24 jam setelah transaksi berhasil.",
+        "Pembayaran harus menggunakan scan QR pada mesin MOKA.",
+        "DANA berhak, tanpa pemberitahuan sebelumnya, melakukan tindakan-tindakan yang diperlukan apabila diduga adanya tindakan kecurangan atau penyalah gunaan dari pengguna.",
+        "DANA berhak meminta pengguna untuk melakukan peningkatan akun menjadi DANA Premium jika diperlukan untuk verifikasi data. ",
+        "Syarat dan ketentuan dapat berubah sewaktu - waktu tanpa pemberitahuan sebelumnya.",
+        "Kunjungi Merchant MOKA ",
+        "Tap Scan pada halaman utama aplikasi DANA dan scan  QR code pada mesin MOKA di kasir.",
+        "Cashback 20% akan otomatis didapatkan setelah transaksi berhasil."
+      ],
+      "cara": []
+    },
+    "tags": ["dana", "food"],
+
+    "title": "Dummy - DANA Cashback 20% di MOKA",
+    "date": "Hingga 29 Des 2019",
+    "detailUrl": "https://dana.id/promo/detail/223/",
+    "imageUrl": "https://dana.id/uploads/promo/promo-1571133632moka-20p-thumbnail.png",
+    "kodePromo": null,
+    "createdAt": "2019-11-19T10:11:27.520Z",
+    "updatedAt": "2019-11-19T10:11:27.520Z"
+  }
+]

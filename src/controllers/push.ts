@@ -4,6 +4,7 @@ import { danaFood, danaGame, danaEntertainment } from '../functions/dana'
 import { ovoFood } from '../functions/ovo'
 import axios from 'axios'
 import Redis from 'ioredis'
+import fs from 'fs'
 
 const redis = new Redis()
 
@@ -87,6 +88,53 @@ export default class PushController {
         }
       }
 
+      res.status(200).json({ message: 'Magic Push sent' })
+    } catch (e) {
+      next(e)
+    }
+  }
+
+  static async magicDummy(req: Request, res: Response, next: NextFunction) {
+    try {
+      const users: IUserModel[] = await User.find({})
+      const dummyJSONPromos: IPromoModel[] = JSON.parse(
+        fs.readFileSync('../../dummy.json', 'utf-8')
+      )
+      const oldPromos: IPromoModel[] = await Promo.find({})
+
+      const filteredPromos: IPromoModel[] = dummyJSONPromos.filter(
+        (dP: IPromoModel) => !oldPromos.some((oP: IPromoModel) => dP.title === oP.title)
+      )
+
+      for (let i = 0; i < users.length; i++) {
+        const user = users[i]
+
+        if (!user.device_token) continue
+
+        const newPromos = filteredPromos.filter((aP: IPromoModel) =>
+          aP.tags.some((tag: string) => user.subscription.includes(tag))
+        )
+
+        const amountTrulyNewPromos = newPromos.length
+
+        if (amountTrulyNewPromos > 0) {
+          await redis.set(`promos_user_${user.device_token}`, JSON.stringify(newPromos))
+
+          await axios({
+            url: 'https://exp.host/--/api/v2/push/send',
+            method: 'POST',
+            data: {
+              to: user.device_token,
+              body: `There are new ${amountTrulyNewPromos} recommended promos curated for you`,
+            },
+            headers: {
+              host: 'exp.host',
+              accept: 'application/json',
+              'Content-Type': 'application/json',
+            },
+          })
+        }
+      }
       res.status(200).json({ message: 'Magic Push sent' })
     } catch (e) {
       next(e)
