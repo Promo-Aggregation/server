@@ -171,8 +171,7 @@ class PromoDBController {
         tags = null,
         q = '',
       } = req.query
-      console.log(q)
-      console.log(tags)
+      if (typeof tags === 'string') tags = [tags]
       if (!tags.length || !Array.isArray(tags))
         return next({ status: 400, message: 'Tags must be an array of string' })
       const promos = await Promo.aggregate([
