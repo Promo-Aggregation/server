@@ -1,5 +1,8 @@
 import User, { IUserModel } from '../models/user'
 import { Request, Response, NextFunction } from 'express'
+import Redis from 'ioredis'
+
+const redis = new Redis()
 
 class SubscriptionController {
   static async subscribe(req: Request, res: Response, next: NextFunction) {
@@ -26,7 +29,11 @@ class SubscriptionController {
         { $pull: { subscription: { $in: req.body.tags } } },
         { new: true }
       )
-      res.status(200).json(user)
+      try {
+        await redis.del(`promos_user_${device_token}`)
+      } finally {
+        res.status(200).json(user)
+      }
     } catch (e) {
       next(e)
     }

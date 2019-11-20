@@ -99,7 +99,6 @@ export default class PushController {
       const users: IUserModel[] = await User.find({})
       const dummyJSONPromos: any[] = dummy
       const oldPromos: IPromoModel[] = await Promo.find({})
-
       const filteredPromos: IPromoModel[] = dummyJSONPromos.filter(
         (dP: any) => !oldPromos.some((oP: IPromoModel) => dP.title === oP.title)
       )
