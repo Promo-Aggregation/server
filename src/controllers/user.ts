@@ -1,4 +1,4 @@
-import User, { IUser } from '../models/user'
+import User, { IUserModel } from '../models/user'
 
 class UserController {
   static async register(req: any, res: any, next: Function) {
@@ -14,7 +14,7 @@ class UserController {
   static async login(req: any, res: any, next: Function) {
     try {
       const { device_token } = req.body
-      const user: IUser = await User.findOne({ device_token })
+      const user: IUserModel = await User.findOne({ device_token })
       if (user) {
         res.status(200).json(user)
       } else {

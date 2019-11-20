@@ -1,13 +1,19 @@
-import { Promo, IPromo, IPromoModel } from '../models/promo'
-import { danaFood, danaGame, danaEntermainment } from '../functions/dana'
+import { danaFood, danaGame, danaEntertainment } from '../functions/dana'
+import Redis from 'ioredis'
 
-class DanaController {
+const redis = new Redis()
+
+class DanaFetchController {
   static async danaFood(req: any, res: any, next: Function) {
     try {
-      const foods: any[] = await danaFood()
-      const data: IPromoModel[] = await Promo.insertMany(foods)
-      // console.log(data)
-      res.status(200).json(data)
+      const danaFoodCache = await redis.get('dana-food')
+      if (danaFoodCache) {
+        res.status(200).json(JSON.parse(danaFoodCache))
+      } else {
+        const foods: any[] = await danaFood()
+        await redis.set('dana-food', JSON.stringify(foods))
+        res.status(200).json(foods)
+      }
     } catch (err) {
       next(err)
     }
@@ -15,25 +21,33 @@ class DanaController {
 
   static async danaGame(req: any, res: any, next: Function) {
     try {
-      const games: any[] = await danaGame()
-      const data: IPromoModel[] = await Promo.insertMany(games)
-      // console.log(data)
-      res.status(200).json(data)
+      const danaGameCache = await redis.get('dana-games')
+      if (danaGameCache) {
+        res.status(200).json(JSON.parse(danaGameCache))
+      } else {
+        const games: any[] = await danaGame()
+        await redis.set('dana-games', JSON.stringify(games))
+        res.status(200).json(games)
+      }
     } catch (err) {
       next(err)
     }
   }
 
-  static async danaEntermainment(req: any, res: any, next: Function) {
+  static async danaEntertainment(req: any, res: any, next: Function) {
     try {
-      const entertainments: any[] = await danaEntermainment()
-      const data: IPromoModel[] = await Promo.insertMany(entertainments)
-      // console.log(data)
-      res.status(200).json(data)
+      const danaEntertainmentCache = await redis.get('dana-entertainment')
+      if (danaEntertainmentCache) {
+        res.status(200).json(JSON.parse(danaEntertainmentCache))
+      } else {
+        const entertainments: any[] = await danaEntertainment()
+        await redis.set('dana-entertainment', JSON.stringify(entertainments))
+        res.status(200).json(entertainments)
+      }
     } catch (err) {
       next(err)
     }
   }
 }
 
-export default DanaController
+export default DanaFetchController

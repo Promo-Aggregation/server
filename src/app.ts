@@ -5,11 +5,23 @@ import cors from 'cors'
 import routes from './routes'
 import errorHandler from './middlewares/errorHandler'
 import './config/mongoose'
+import { IUserModel } from './models'
+// import './cron'
+
+declare global {
+  namespace Express {
+    interface Request {
+      device_token: string | string[]
+      subscription: string[]
+      user: IUserModel
+    }
+  }
+}
 
 const app = express()
 
 app.use(morgan('dev'))
-app.use(cors())
+app.use(cors({ exposedHeaders: ['count'] }))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use('/', routes)

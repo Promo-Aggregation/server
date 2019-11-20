@@ -1,4 +1,7 @@
-export default (err: any, req: any, res: any, next: Function) => {
+import { Request, Response, NextFunction } from 'express'
+
+export default (err: any, req: Request, res: Response, next: NextFunction) => {
+  console.log(err)
   let status: number
   let message: string
 
@@ -15,6 +18,9 @@ export default (err: any, req: any, res: any, next: Function) => {
           message = 'Something happened in the database'
         }
         break
+      case 'TimeoutError':
+        status = 408
+        message = 'Server cannot get data from hosts in a set of time, please try again later'
       default:
         status = err.status || 500
         message = err.message || 'Internal Server Error'

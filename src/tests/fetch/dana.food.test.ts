@@ -8,28 +8,28 @@ import { Promo } from '../../models'
 const expect = chai.expect
 chai.use(chaiHttp)
 
-describe('Get Dana Entertainment', function() {
-  this.timeout(10000)
+describe('Get Dana Food', function() {
+  // this.timeout(30000)
+  this.timeout(0)
   after(() => Promo.deleteMany({}))
 
-  it('Success Get Dana Entertainment', function(done) {
+  it('Success Get Dana Food', function(done) {
     chai
       .request(app)
-      .get('/promos/dana-entertainment')
+      .get('/fetch/dana/food')
       .end((err: any, res: any) => {
         expect(res).to.have.status(200)
         expect(res.body).to.be.an('array')
         expect(res.body).to.have.lengthOf.greaterThan(0)
         res.body.forEach((el: any) => {
           expect(el).to.be.an('object')
-          expect(el).to.have.property('_id')
           expect(el).to.have.property('title')
           expect(el).to.have.property('date')
           expect(el).to.have.property('detailUrl')
           expect(el).to.have.property('imageUrl')
           expect(el).to.have.property('kodePromo')
-          expect(el).to.have.property('createdAt')
-          expect(el).to.have.property('updatedAt')
+          expect(el).to.have.property('tags')
+          expect(el).to.have.property('detail')
         })
         done()
       })

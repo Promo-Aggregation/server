@@ -14,7 +14,7 @@ describe('User Login Testing', function() {
   before(() => User.create(userData))
   after(() => User.deleteMany({}))
 
-  it('Success User Login', (done) => {
+  it('Success User Login', done => {
     chai
       .request(app)
       .post('/users/login')
@@ -34,7 +34,7 @@ describe('User Login Testing', function() {
       })
   })
 
-  it('Fails User Login - No such token', (done) => {
+  it('Fails User Login - No such token', done => {
     const wrongData = { device_token: '98765' }
     chai
       .request(app)

@@ -2,11 +2,15 @@ steps:
   - name: "gcr.io/cloud-builders/npm"
     args: ["install"]
   - name: "gcr.io/cloud-builders/npm"
-    args: ["run", "compile"]
+    args: ["run", "puppeteer"]
+  - name: "ubuntu"
+    args: ["bash", "./puppeteer.bash"]
   - name: "gcr.io/cloud-builders/npm"
-    args: ["run", "test"]
-    env:
-      - "MONGO_DB=${_MONGO_DB_TEST}"
+    args: ["run", "compile"]
+  # - name: "gcr.io/cloud-builders/npm"
+  #   args: ["run", "test"]
+  #   env:
+  #     - "MONGO_DB=${_MONGO_DB_TEST}"
   - name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy"]
     env:
