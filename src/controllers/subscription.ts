@@ -8,8 +8,6 @@ class SubscriptionController {
   static async subscribe(req: Request, res: Response, next: NextFunction) {
     try {
       const { device_token } = req
-      console.log(req.user)
-      console.log(req.body)
       const user: IUserModel = await User.findOneAndUpdate(
         { device_token },
         { $addToSet: { subscription: { $each: req.body.tags } } },
