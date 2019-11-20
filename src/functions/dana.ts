@@ -2,14 +2,14 @@ import pptr from 'puppeteer'
 
 async function getGeneralData(page: any, category: string) {
   process.setMaxListeners(Infinity)
-  const cards = await page.$$('.card_promo')
+  const cards = await page.$$('.promo-card-list')
 
   const data: any[] = []
 
   for (const card of cards) {
     console.log('wait for it')
     const _title = card.$eval('h3', (h3: any) => h3.innerText)
-    const _date = card.$eval('div[class="date"]', (date: any) => date.innerText)
+    const _date = card.$eval('div[class*="date"]', (date: any) => date.innerText)
     const _detailUrl = card.$eval('a[class="btn_more"]', (node: any) => node.getAttribute('href'))
     const _imageUrl = card.$eval('.img_con > img', (node: any) => node.getAttribute('src'))
 
@@ -47,8 +47,16 @@ async function getDetailData(page: any) {
       const detail = { syaratKetentuan: [], cara: [] }
       await page.goto(hrefValue + 'full', { waitUntil: 'networkidle2', timeout: 0 })
       const detailItem = await page.evaluate(() =>
-        Array.from(document.querySelectorAll('li'), (element) => element.textContent)
+        Array.from(document.querySelectorAll('ol > li'), element => element.textContent)
       )
+
+      let min: any
+      const a = detailItem.filter(detail => detail.match(/minimum transaksi/i))
+      if (a.length) {
+        // console.log(a)
+        const first = a[0]
+        min = first.match(/\d+/)[0] + '000'
+      }
 
       for (let j = 0; j < detailItem.length; j++) {
         if (detailItem[j].includes('Syarat dan ketentuan')) {
@@ -60,8 +68,7 @@ async function getDetailData(page: any) {
         }
       }
 
-      // data[i].detail = { ...detail }
-      data.push(detail)
+      data.push({ detail, minimalTransaction: Number(min) || null })
 
       await browser.close()
     } catch (err) {
@@ -82,15 +89,23 @@ export async function danaFood() {
   const data = []
   try {
     const page = await browser.newPage()
-    await page.goto('https://dana.id/promo/cate/Food/1', { waitUntil: 'networkidle2', timeout: 0 })
-    await page.waitForSelector('.section')
+    await page.goto('https://dana.id/promo/category/Food', {
+      waitUntil: 'networkidle2',
+      timeout: 0
+    })
+    await page.waitForSelector('.promo-list')
 
     const foo = await getGeneralData(page, 'food')
 
     const [generalData, detailData] = await Promise.all([Promise.all(foo), getDetailData(page)])
 
     for (let i = 0; i < generalData.length; i++) {
-      data.push({ ...generalData[i], detail: { ...detailData[i] } })
+      data.push({
+        ...generalData[i],
+        detail: { ...detailData[i].detail },
+        minimalTransaction: detailData[i].minimalTransaction,
+        cashback: null
+      })
     }
 
     await browser.close()
@@ -111,15 +126,20 @@ export async function danaEntertainment() {
   const data = []
   try {
     const page = await browser.newPage()
-    await page.goto('https://dana.id/promo/cate/Entertainment/1', { waitUntil: 'networkidle2' })
-    await page.waitForSelector('.section')
+    await page.goto('https://dana.id/promo/category/Entertainment', { waitUntil: 'networkidle2' })
+    await page.waitForSelector('.promo-list')
 
     const foo = await getGeneralData(page, 'entertainment')
 
     const [generalData, detailData] = await Promise.all([Promise.all(foo), getDetailData(page)])
 
     for (let i = 0; i < generalData.length; i++) {
-      data.push({ ...generalData[i], detail: { ...detailData[i] } })
+      data.push({
+        ...generalData[i],
+        detail: { ...detailData[i].detail },
+        minimalTransaction: detailData[i].minimalTransaction,
+        cashback: null
+      })
     }
 
     await browser.close()
@@ -141,15 +161,23 @@ export async function danaGame() {
   const data = []
   try {
     const page = await browser.newPage()
-    await page.goto('https://dana.id/promo/cate/Game/1', { waitUntil: 'networkidle2', timeout: 0 })
-    await page.waitForSelector('.section')
+    await page.goto('https://dana.id/promo/category/Game', {
+      waitUntil: 'networkidle2',
+      timeout: 0
+    })
+    await page.waitForSelector('.promo-list')
 
     const foo = await getGeneralData(page, 'game')
 
     const [generalData, detailData] = await Promise.all([Promise.all(foo), getDetailData(page)])
 
     for (let i = 0; i < generalData.length; i++) {
-      data.push({ ...generalData[i], detail: { ...detailData[i] } })
+      data.push({
+        ...generalData[i],
+        detail: { ...detailData[i].detail },
+        minimalTransaction: detailData[i].minimalTransaction,
+        cashback: null
+      })
     }
 
     await browser.close()
