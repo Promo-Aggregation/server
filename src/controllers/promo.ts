@@ -163,7 +163,7 @@ class PromoDBController {
 
   static async searchWithTagsAggregate(req: Request, res: Response, next: NextFunction) {
     try {
-      const {
+      let {
         sort = 'createdAt',
         order = -1,
         offset = 0,
