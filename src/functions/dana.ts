@@ -11,7 +11,10 @@ async function getGeneralData(page: any, category: string) {
     const _title = card.$eval('h3', (h3: any) => h3.innerText)
     const _date = card.$eval('div[class*="date"]', (date: any) => date.innerText)
     const _detailUrl = card.$eval('a[class="btn_more"]', (node: any) => node.getAttribute('href'))
-    const _imageUrl = card.$eval('.img_con > img', (node: any) => node.getAttribute('src'))
+    // const _imageUrl = card.$eval('.img_con > img', (node: any) => node.getAttribute('src'))
+    const _imageUrl = card.$eval('.promo-card-list-img > img', (node: any) =>
+      node.getAttribute('src')
+    )
 
     const [title, date, detailUrl, imageUrl] = await Promise.all([
       _title,
@@ -23,6 +26,7 @@ async function getGeneralData(page: any, category: string) {
     data.push({ title, date, detailUrl, imageUrl, kodePromo: null, tags: ['dana', category] })
   }
 
+  console.log(data)
   return data
 }
 
@@ -52,7 +56,7 @@ async function getDetailData(page: any) {
 
       let min: any
       const a = detailItem.filter(detail => detail.match(/minimum transaksi/i))
-      if (a.length) {
+      if (a.length && a[0].includes('0')) {
         // console.log(a)
         const first = a[0]
         min = first.match(/\d+/)[0] + '000'
@@ -110,6 +114,7 @@ export async function danaFood() {
       })
     }
 
+    console.log(data)
     await browser.close()
     return data
   } catch (err) {
