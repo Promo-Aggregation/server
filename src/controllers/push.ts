@@ -4,7 +4,7 @@ import { danaFood, danaGame, danaEntertainment } from '../functions/dana'
 import { ovoFood } from '../functions/ovo'
 import axios from 'axios'
 import Redis from 'ioredis'
-import fs from 'fs'
+import dummy from './dummy'
 
 const redis = new Redis()
 
@@ -97,13 +97,11 @@ export default class PushController {
   static async magicDummy(req: Request, res: Response, next: NextFunction) {
     try {
       const users: IUserModel[] = await User.find({})
-      const dummyJSONPromos: IPromoModel[] = JSON.parse(
-        fs.readFileSync('../../dummy.json', 'utf-8')
-      )
+      const dummyJSONPromos: any[] = dummy
       const oldPromos: IPromoModel[] = await Promo.find({})
 
       const filteredPromos: IPromoModel[] = dummyJSONPromos.filter(
-        (dP: IPromoModel) => !oldPromos.some((oP: IPromoModel) => dP.title === oP.title)
+        (dP: any) => !oldPromos.some((oP: IPromoModel) => dP.title === oP.title)
       )
 
       for (let i = 0; i < users.length; i++) {
