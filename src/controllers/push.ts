@@ -66,7 +66,7 @@ export default class PushController {
           aP.tags.some((tag: string) => user.subscription.includes(tag))
         )
 
-        const amountTrulyNewPromos = filteredPromos.length - newPromos.length
+        const amountTrulyNewPromos = newPromos.length
 
         if (amountTrulyNewPromos > 0) {
           await redis.set(`promos_user_${user.device_token}`, JSON.stringify(newPromos))
