@@ -160,6 +160,39 @@ class PromoDBController {
       next(e)
     }
   }
+
+  static async searchWithTagsAggregate(req: Request, res: Response, next: NextFunction) {
+    try {
+      const {
+        sort = 'createdAt',
+        order = -1,
+        offset = 0,
+        limit = 20,
+        tags = null,
+        q = '',
+      } = req.query
+      const promos = await Promo.aggregate([
+        {
+          $match: { title: new RegExp(q, 'i') },
+        },
+        {
+          $match: { tags: { $in: tags } },
+        },
+        {
+          $sort: { [sort]: order },
+        },
+        {
+          $limit: limit,
+        },
+        {
+          $skip: offset,
+        },
+      ])
+      res.status(200).json(promos)
+    } catch (e) {
+      next(e)
+    }
+  }
 }
 
 export default PromoDBController
