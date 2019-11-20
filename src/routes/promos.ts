@@ -17,4 +17,6 @@ router.get('/tags', PromoDBController.getByTags)
 
 router.get('/searchWithTags', PromoDBController.searchWithTags)
 
+router.get('/new-promos', authentication, PromoDBController.getNewPromosCache)
+
 export default router

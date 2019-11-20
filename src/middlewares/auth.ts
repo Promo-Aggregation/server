@@ -8,6 +8,7 @@ export const authentication = async (req: Request, res: Response, next: NextFunc
   if (user) {
     req.device_token = device_token
     req.subscription = user.subscription
+    req.user = user
     next()
   } else {
     next({ status: 401, message: 'Device is not registered on the server.' })

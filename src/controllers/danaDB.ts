@@ -13,7 +13,7 @@ class DanaFetchDB {
       const fetched = [...foods, ...games, ...entertainments]
       const dbData: IPromoModel[] = await Promo.find({})
       const filtered: IPromoModel[] = fetched.filter(
-        el => !dbData.some(dbDatum => el.title === dbDatum.title)
+        (el) => !dbData.some((dbDatum) => el.title === dbDatum.title)
       )
       if (filtered.length) {
         const newPromos: IPromoModel[] = await Promo.insertMany(filtered)
@@ -28,4 +28,3 @@ class DanaFetchDB {
 }
 
 export default DanaFetchDB
-

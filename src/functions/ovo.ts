@@ -36,7 +36,7 @@ async function getGeneralData(page: any, category: string) {
   }
 
   const newData = []
-  data.forEach(d => {
+  data.forEach((d) => {
     if (!(d.subTitle === d.subTitle.toUpperCase())) {
       delete d.subTitle
       newData.push(d)
@@ -70,7 +70,7 @@ async function getDetailData(page: any, links: any[]) {
       const _syarat = page.evaluate(() =>
         Array.from(
           document.querySelectorAll('.ovo-deals-merchant-details > ol > li'),
-          el => el.textContent
+          (el) => el.textContent
         )
       )
 
@@ -101,32 +101,32 @@ async function getDetailData(page: any, links: any[]) {
   return data
 }
 
-export async function ovoFood() {
-  const browser = await pptr.launch({
-    headless: true,
-    defaultViewport: { width: 1100, height: 1000 },
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
-  })
+export function ovoFood(): Promise<any[]> {
+  return new Promise(async (resolve, reject) => {
+    const browser = await pptr.launch({
+      headless: true,
+      defaultViewport: { width: 1100, height: 1000 },
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    })
 
-  const data = []
-  try {
-    const page = await browser.newPage()
-    await page.goto('https://www.ovo.id/deals', { waitUntil: 'networkidle2', timeout: 0 })
-    await page.waitForSelector('.ovo-deals-list')
+    const data = []
+    try {
+      const page = await browser.newPage()
+      await page.goto('https://www.ovo.id/deals', { waitUntil: 'networkidle2', timeout: 0 })
+      await page.waitForSelector('.ovo-deals-list')
 
-    const buttonMore = await page.$('.ovo-button-wrapper')
+      const buttonMore = await page.$('.ovo-button-wrapper')
 
-    await buttonMore.click()
-    await page.waitForSelector('.dc__dealw')
+      await buttonMore.click()
+      await page.waitForSelector('.dc__dealw')
 
-    return new Promise((resolve, reject) => {
       setTimeout(async () => {
         const foo = await getGeneralData(page, 'food')
 
         const [generalData] = await Promise.all([Promise.all(foo)])
         const detailData = await getDetailData(page, generalData)
 
-        const minTransAndCashback = detailData.map(d => {
+        const minTransAndCashback = detailData.map((d) => {
           let cashback: number
           d.detail.syaratKetentuan.forEach((d2: string) => {
             const cashbackResult = d2.match(/(cashback)\s?(\d+)/i)
@@ -168,9 +168,82 @@ export async function ovoFood() {
         await browser.close()
         resolve(data)
       }, 500)
-    })
-  } catch (err) {
-    await browser.close()
-    Promise.reject(err)
-  }
+    } catch (err) {
+      await browser.close()
+      reject(err)
+    }
+  })
 }
+// export async function ovoFood() {
+//   const browser = await pptr.launch({
+//     headless: true,
+//     defaultViewport: { width: 1100, height: 1000 },
+//     args: ['--no-sandbox', '--disable-setuid-sandbox']
+//   })
+
+//   const data = []
+//   try {
+//     const page = await browser.newPage()
+//     await page.goto('https://www.ovo.id/deals', { waitUntil: 'networkidle2', timeout: 0 })
+//     await page.waitForSelector('.ovo-deals-list')
+
+//     const buttonMore = await page.$('.ovo-button-wrapper')
+
+//     await buttonMore.click()
+//     await page.waitForSelector('.dc__dealw')
+
+//     return new Promise((resolve, reject) => {
+//       setTimeout(async () => {
+//         const foo = await getGeneralData(page, 'food')
+
+//         const [generalData] = await Promise.all([Promise.all(foo)])
+//         const detailData = await getDetailData(page, generalData)
+
+//         const minTransAndCashback = detailData.map(d => {
+//           let cashback: number
+//           d.detail.syaratKetentuan.forEach((d2: string) => {
+//             const cashbackResult = d2.match(/(cashback)\s?(\d+)/i)
+//             if (cashbackResult) cashback = Number(cashbackResult[2])
+//           })
+
+//           const arrayMin = d.detail.syaratKetentuan
+//             .filter((d2: string) => {
+//               if (d2.match(/minimal/gi) || d2.match(/minimum/gi)) return d2
+//             })
+//             .join(' ')
+//             .split(' ')
+
+//           let indexRp: number
+//           if (arrayMin.length && arrayMin.indexOf('Rp') !== -1) indexRp = arrayMin.indexOf('Rp')
+//           else indexRp = arrayMin.indexOf('Rp.')
+
+//           return { arrayMin, cashback: cashback || null, indexRp }
+//         })
+
+//         for (let i = 0; i < generalData.length; i++) {
+//           data.push({
+//             ...generalData[i],
+//             detail: detailData[i].detail,
+//             date: detailData[i].date,
+//             minimalTransaction:
+//               minTransAndCashback[i].arrayMin.length > 1
+//                 ? Number(
+//                     minTransAndCashback[i].arrayMin[minTransAndCashback[i].indexRp + 1]
+//                       .split('.')
+//                       .join('')
+//                   )
+//                 : null,
+//             cashback: minTransAndCashback[i].cashback,
+//             kodePromo: null
+//           })
+//         }
+
+//         await browser.close()
+//         resolve(data)
+//       }, 500)
+//     })
+//   } catch (err) {
+//     await browser.close()
+//     Promise.reject(err)
+//   }
+// }

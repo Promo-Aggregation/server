@@ -5,6 +5,7 @@ import cors from 'cors'
 import routes from './routes'
 import errorHandler from './middlewares/errorHandler'
 import './config/mongoose'
+import { IUserModel } from './models'
 // import './cron'
 
 declare global {
@@ -12,6 +13,7 @@ declare global {
     interface Request {
       device_token: string | string[]
       subscription: string[]
+      user: IUserModel
     }
   }
 }

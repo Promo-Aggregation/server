@@ -17,7 +17,7 @@ async function getGeneralData(page: any, category: string) {
       _title,
       _date,
       _detailUrl,
-      _imageUrl
+      _imageUrl,
     ])
 
     data.push({ title, date, detailUrl, imageUrl, kodePromo: null, tags: ['dana', category] })
@@ -37,7 +37,7 @@ async function getDetailData(page: any) {
     const browser = await pptr.launch({
       headless: true,
       defaultViewport: { width: 1100, height: 600 },
-      args: ['--no-sandbox', '--disable-setuid-sandbox']
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
     })
     const page = await browser.newPage()
     const hrefValue = await (await allDetailLinks[i].getProperty('href')).jsonValue()
@@ -72,8 +72,9 @@ async function getDetailData(page: any) {
 
       await browser.close()
     } catch (err) {
-      console.log(err)
       await browser.close()
+      console.log(err)
+      Promise.reject(err)
     }
   }
 
@@ -84,14 +85,15 @@ export async function danaFood() {
   process.setMaxListeners(Infinity)
   const browser = await pptr.launch({
     headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    timeout: 0,
   })
   const data = []
   try {
     const page = await browser.newPage()
     await page.goto('https://dana.id/promo/category/Food', {
       waitUntil: 'networkidle2',
-      timeout: 0
+      timeout: 0,
     })
     await page.waitForSelector('.promo-list')
 
@@ -104,15 +106,16 @@ export async function danaFood() {
         ...generalData[i],
         detail: { ...detailData[i].detail },
         minimalTransaction: detailData[i].minimalTransaction,
-        cashback: null
+        cashback: null,
       })
     }
 
     await browser.close()
     return data
   } catch (err) {
-    console.log(err)
     await browser.close()
+    console.log(err)
+    Promise.reject(err)
   }
 }
 
@@ -121,7 +124,7 @@ export async function danaEntertainment() {
   const browser = await pptr.launch({
     headless: true,
     defaultViewport: { width: 1100, height: 600 },
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
   })
   const data = []
   try {
@@ -138,7 +141,7 @@ export async function danaEntertainment() {
         ...generalData[i],
         detail: { ...detailData[i].detail },
         minimalTransaction: detailData[i].minimalTransaction,
-        cashback: null
+        cashback: null,
       })
     }
 
@@ -146,8 +149,9 @@ export async function danaEntertainment() {
 
     return data
   } catch (err) {
-    console.log(err)
     await browser.close()
+    console.log(err)
+    Promise.reject(err)
   }
 }
 
@@ -156,14 +160,14 @@ export async function danaGame() {
   const browser = await pptr.launch({
     headless: true,
     defaultViewport: { width: 1100, height: 600 },
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
   })
   const data = []
   try {
     const page = await browser.newPage()
     await page.goto('https://dana.id/promo/category/Game', {
       waitUntil: 'networkidle2',
-      timeout: 0
+      timeout: 0,
     })
     await page.waitForSelector('.promo-list')
 
@@ -176,14 +180,15 @@ export async function danaGame() {
         ...generalData[i],
         detail: { ...detailData[i].detail },
         minimalTransaction: detailData[i].minimalTransaction,
-        cashback: null
+        cashback: null,
       })
     }
 
     await browser.close()
     return data
   } catch (err) {
-    console.log(err)
     await browser.close()
+    console.log(err)
+    Promise.reject(err)
   }
 }
